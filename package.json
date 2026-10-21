@@ -22,7 +22,10 @@
     "preview",
     "cordis.patch.yml",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "scripts",
+    "test",
+    "docs"
   ],
   "scripts": {
     "build": "node src/build.mjs",
