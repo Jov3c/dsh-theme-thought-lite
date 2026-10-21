@@ -1,0 +1,53 @@
+{
+  "name": "dsh-theme-thought-lite",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ThoughtLite skin for DeepSeek Harness — a monochrome, serif-on-paper editorial repaint of the desktop GUI, ported from the astro-theme-thought-lite design language.",
+  "type": "module",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "src",
+    "fixtures",
+    "preview",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node src/build.mjs",
+    "verify": "node test/verify.mjs",
+    "preflight": "node scripts/preflight.mjs",
+    "graph": "node scripts/graph-probe.mjs",
+    "check": "node src/build.mjs && node test/verify.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web",
+      "immediately": true
+    },
+    "manifestVersion": 1
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "theme",
+    "skin",
+    "thought-lite",
+    "astro"
+  ]
+}

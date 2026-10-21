@@ -1,0 +1,4011 @@
+{
+  "note": "DSH design-token inventory extracted from the installed DSH (ui-theme client bundle). modeSpecific = tokens whose light and dark values differ in the base theme.",
+  "count": 422,
+  "modeSpecificCount": 112,
+  "tokens": [
+    {
+      "name": "--ds-ease-in-out",
+      "sheet": "base",
+      "light": "cubic-bezier(.4, 0, .2, 1)",
+      "dark": "cubic-bezier(.4, 0, .2, 1)",
+      "selectors": [
+        "base::root"
+      ]
+    },
+    {
+      "name": "--ds-font-family-code",
+      "sheet": "base",
+      "light": "var(--dsh-font-family-code,var(--dsh-font-family-code-default)), var(--dsh-font-family-code-default)",
+      "dark": "var(--dsh-font-family-code-default)",
+      "selectors": [
+        "base::root",
+        "base:body"
+      ]
+    },
+    {
+      "name": "--ds-transition-duration",
+      "sheet": "base",
+      "light": ".2s",
+      "dark": ".2s",
+      "selectors": [
+        "base::root"
+      ]
+    },
+    {
+      "name": "--ds-transition-duration-fast",
+      "sheet": "base",
+      "light": ".1s",
+      "dark": ".1s",
+      "selectors": [
+        "base::root"
+      ]
+    },
+    {
+      "name": "--ds-transition-duration-slow",
+      "sheet": "base",
+      "light": ".3s",
+      "dark": ".3s",
+      "selectors": [
+        "base::root"
+      ]
+    },
+    {
+      "name": "--dsh-code-font-delta",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(var(--dsh-code-font-size,11px) - 11px)",
+      "dark": "calc(var(--dsh-code-font-size,11px) - 11px)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsh-content-font-delta",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(var(--dsh-content-font-size,14px) - 14px)",
+      "dark": "calc(var(--dsh-content-font-size,14px) - 14px)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsh-content-font-delta-secondary",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(var(--dsh-content-font-size-secondary) - 13px)",
+      "dark": "calc(var(--dsh-content-font-size-secondary) - 13px)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsh-content-font-size-secondary",
+      "sheet": "gradient-shadow-text",
+      "light": "min(calc(var(--dsh-content-font-size,14px) - 1px), max(13px, calc(var(--dsh-content-font-size,14px) - 2px)))",
+      "dark": "min(calc(var(--dsh-content-font-size,14px) - 1px), max(13px, calc(var(--dsh-content-font-size,14px) - 2px)))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsh-font-family-code-default",
+      "sheet": "base",
+      "light": "\"SF Mono\", \"JetBrains Mono\", \"Fira Code\", Consolas, \"Liberation Mono\", Menlo, Courier, \"PingFang SC\", \"Microsoft YaHei\"",
+      "dark": "\"SF Mono\", \"JetBrains Mono\", \"Fira Code\", Consolas, \"Liberation Mono\", Menlo, Courier, \"PingFang SC\", \"Microsoft YaHei\"",
+      "selectors": [
+        "base::root"
+      ]
+    },
+    {
+      "name": "--dsh-font-family-text-default",
+      "sheet": "base",
+      "light": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "dark": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "selectors": [
+        "base::root"
+      ]
+    },
+    {
+      "name": "--dsh-scrollbar-thumb",
+      "sheet": "scrollbar",
+      "light": "var(--dsw-alias-scrollbar-bg-l1)",
+      "dark": "var(--dsw-alias-scrollbar-bg-l1)",
+      "selectors": [
+        "scrollbar:body"
+      ]
+    },
+    {
+      "name": "--dsh-scrollbar-thumb-border",
+      "sheet": "scrollbar",
+      "light": "0px",
+      "dark": "0px",
+      "selectors": [
+        "scrollbar:body"
+      ]
+    },
+    {
+      "name": "--dsh-scrollbar-thumb-hover",
+      "sheet": "scrollbar",
+      "light": "var(--dsw-alias-scrollbar-hover-l1)",
+      "dark": "var(--dsw-alias-scrollbar-hover-l1)",
+      "selectors": [
+        "scrollbar:body"
+      ]
+    },
+    {
+      "name": "--dsh-scrollbar-track-margin",
+      "sheet": "scrollbar",
+      "light": "0px",
+      "dark": "0px",
+      "selectors": [
+        "scrollbar:body"
+      ]
+    },
+    {
+      "name": "--dsh-scrollbar-width",
+      "sheet": "scrollbar",
+      "light": "5px",
+      "dark": "5px",
+      "selectors": [
+        "scrollbar:body"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-base",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-00)",
+      "dark": "var(--dsw-static-neutral-bluish-950)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-document-preview",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-100)",
+      "dark": "var(--dsw-static-neutral-bluish-950)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-document-selection",
+      "sheet": "design-platform",
+      "light": "color-mix(in srgb, var(--dsw-static-blue-500) 40%, transparent)",
+      "dark": "color-mix(in srgb, var(--dsw-static-blue-500) 40%, transparent)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-layer-1",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-00)",
+      "dark": "var(--dsw-static-neutral-bluish-875)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-layer-2",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-00)",
+      "dark": "var(--dsw-static-neutral-bluish-850)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-layer-3",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-00)",
+      "dark": "var(--dsw-static-neutral-bluish-800)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-mask-1",
+      "sheet": "design-platform",
+      "light": "#0000003d",
+      "dark": "#00000080",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-mask-2",
+      "sheet": "design-platform",
+      "light": "#0000001f",
+      "dark": "#0003",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-mask-3",
+      "sheet": "design-platform",
+      "light": "#0000007a",
+      "dark": "#0000007a",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-mask-drop",
+      "sheet": "design-platform",
+      "light": "#ffffffb3",
+      "dark": "#272730b3",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-mask-photo",
+      "sheet": "design-platform",
+      "light": "#000000e0",
+      "dark": "#000000e0",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-module-platform",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-60)",
+      "dark": "var(--dsw-static-neutral-bluish-800)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-multi-select",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-60)",
+      "dark": "var(--dsw-static-neutral-850)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-overlay",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-150)",
+      "dark": "var(--dsw-static-neutral-bluish-700)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-bg-skeleton",
+      "sheet": "design-platform",
+      "light": "#0000000a",
+      "dark": "#ffffff14",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-border-inverted",
+      "sheet": "design-platform",
+      "light": "#0000",
+      "dark": "#ffffff0f",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-border-inverted2",
+      "sheet": "design-platform",
+      "light": "#0000",
+      "dark": "#ffffff14",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-border-l1",
+      "sheet": "design-platform",
+      "light": "#0000000a",
+      "dark": "#ffffff0f",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-border-l2",
+      "sheet": "design-platform",
+      "light": "#0000001a",
+      "dark": "#ffffff1f",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-border-l2-darkmode-thin",
+      "sheet": "design-platform",
+      "light": "#0000001a",
+      "dark": "#ffffff0f",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-border-l3",
+      "sheet": "design-platform",
+      "light": "#0000001f",
+      "dark": "#ffffff29",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-border-l4",
+      "sheet": "design-platform",
+      "light": "#00000029",
+      "dark": "#fff3",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-brand-primary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-1000)",
+      "dark": "var(--dsw-static-neutral-bluish-50)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-brand-primary-invert",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-1000)",
+      "dark": "var(--dsw-static-neutral-bluish-50)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-brand-primary-new-colorprimary-new-color",
+      "sheet": "design-platform",
+      "light": "#4176e6",
+      "dark": "var(--dsw-static-deepseek-450)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-brand-text",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-1000)",
+      "dark": "var(--dsw-static-neutral-bluish-50)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-contrast-fill",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-700)",
+      "dark": "var(--dsw-static-neutral-bluish-50)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-elevated-fill",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-00)",
+      "dark": "var(--dsw-static-neutral-bluish-750)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-floating-fill",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-00)",
+      "dark": "var(--dsw-static-neutral-bluish-850)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-floating-hover",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-75)",
+      "dark": "var(--dsw-static-neutral-bluish-800)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-ghost-active-border",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-500)",
+      "dark": "var(--dsw-static-neutral-bluish-600)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-ghost-active-fill",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-100)",
+      "dark": "var(--dsw-static-neutral-bluish-750)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-ghost-active-hover",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-150)",
+      "dark": "var(--dsw-static-neutral-bluish-700)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-info-fill",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-deepseek-500)",
+      "dark": "var(--dsw-static-deepseek-400)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-info-hover",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-deepseek-400)",
+      "dark": "var(--dsw-static-deepseek-500)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-primary-dimmed",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-100)",
+      "dark": "var(--dsw-static-neutral-bluish-750)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-primary-fill",
+      "sheet": "design-platform",
+      "light": "var(--dsw-alias-brand-primary)",
+      "dark": "var(--dsw-alias-brand-primary)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-primary-hover",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-750)",
+      "dark": "var(--dsw-static-neutral-bluish-100)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-tool-bar-fill",
+      "sheet": "design-platform",
+      "light": "#54555780",
+      "dark": "#54555780",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-tool-bar-fill-invisible",
+      "sheet": "design-platform",
+      "light": "#1f1f1f5c",
+      "dark": "#1f1f1f5c",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-button-tool-bar-hover",
+      "sheet": "design-platform",
+      "light": "#54555799",
+      "dark": "#54555799",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-code-diff-added",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-green-500-a08)",
+      "dark": "var(--dsw-static-green-500-a12)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-code-diff-deleted",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-red-600-a08)",
+      "dark": "var(--dsw-static-red-400-a12)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-file-diff-added-bg",
+      "sheet": "design-platform",
+      "light": "#e6f4e7",
+      "dark": "#1f3124",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-file-diff-added-gutter",
+      "sheet": "design-platform",
+      "light": "#edf7ed",
+      "dark": "#132016",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-file-diff-added-marker",
+      "sheet": "design-platform",
+      "light": "#01a241",
+      "dark": "#41c977",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-file-diff-deleted-bg",
+      "sheet": "design-platform",
+      "light": "#fce6e2",
+      "dark": "#3c1f1b",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-file-diff-deleted-gutter",
+      "sheet": "design-platform",
+      "light": "#fdece9",
+      "dark": "#28130e",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-file-diff-deleted-marker",
+      "sheet": "design-platform",
+      "light": "#ba2723",
+      "dark": "#fa423e",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-interactive-bg-active",
+      "sheet": "design-platform",
+      "light": "#2631481a",
+      "dark": "#ffffff24",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-interactive-bg-hover",
+      "sheet": "design-platform",
+      "light": "#2631480f",
+      "dark": "#ffffff14",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-interactive-bg-hover-accent",
+      "sheet": "design-platform",
+      "light": "#26314824",
+      "dark": "#ffffff3d",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-interactive-bg-hover-danger",
+      "sheet": "design-platform",
+      "light": "#ec13130d",
+      "dark": "#f25a5a26",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-interactive-bg-hover-solid",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-75)",
+      "dark": "var(--dsw-static-neutral-bluish-800)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-label-caption",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-400)",
+      "dark": "var(--dsw-static-neutral-bluish-600)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-label-deep-diving",
+      "sheet": "design-platform",
+      "light": "color-mix(in srgb, var(--dsw-static-deepseek-500) 70%, var(--dsw-static-blue-950))",
+      "dark": "color-mix(in srgb, var(--dsw-static-deepseek-450) 55%, var(--dsw-static-neutral-bluish-400))",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-label-deep-diving-shimmer",
+      "sheet": "design-platform",
+      "light": "color-mix(in srgb, var(--dsw-static-deepseek-500) 30%, var(--dsw-static-blue-950))",
+      "dark": "color-mix(in srgb, var(--dsw-static-blue-300) 65%, var(--dsw-static-deepseek-400))",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-label-dimmed",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-200)",
+      "dark": "var(--dsw-static-neutral-bluish-750)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-label-document-preview",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-700)",
+      "dark": "var(--dsw-static-neutral-bluish-300)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-label-primary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-1000)",
+      "dark": "var(--dsw-static-neutral-bluish-50)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-label-primary-bluish",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-blue-900)",
+      "dark": "var(--dsw-static-neutral-bluish-50)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-label-primary-dimmed",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-950)",
+      "dark": "var(--dsw-static-neutral-bluish-100)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-label-primary-foreground",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-00)",
+      "dark": "var(--dsw-static-neutral-bluish-1000)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-label-primary-inverted",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-00)",
+      "dark": "var(--dsw-static-neutral-bluish-800)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-label-secondary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-700)",
+      "dark": "var(--dsw-static-neutral-bluish-300)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-label-shimmer",
+      "sheet": "design-platform",
+      "light": "color-mix(in srgb, var(--dsw-static-neutral-1000) 30%, transparent)",
+      "dark": "color-mix(in srgb, var(--dsw-static-neutral-00) 45%, transparent)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-label-tertiary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-600)",
+      "dark": "var(--dsw-static-neutral-bluish-400)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-link",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-deepseek-500)",
+      "dark": "var(--dsw-static-deepseek-400)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-markdown-citation",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-100)",
+      "dark": "var(--dsw-static-neutral-bluish-800)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-markdown-code-block",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-50)",
+      "dark": "var(--dsw-static-neutral-bluish-900)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-markdown-code-block-banner",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-50)",
+      "dark": "var(--dsw-static-neutral-bluish-850)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-markdown-code-segment-selected",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-00)",
+      "dark": "var(--dsw-static-neutral-bluish-800)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-markdown-code-segment-unselected",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-75)",
+      "dark": "var(--dsw-static-neutral-bluish-900)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-markdown-inline-code",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-50)",
+      "dark": "var(--dsw-static-neutral-800)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-markdown-placeholder",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-60)",
+      "dark": "var(--dsw-static-neutral-bluish-850)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-markdown-tag",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-75)",
+      "dark": "var(--dsw-static-neutral-bluish-850)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-menu-group-header-fill",
+      "sheet": "design-platform",
+      "light": "#f8f9faf0",
+      "dark": "#303136f0",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-menu-icon",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-800)",
+      "dark": "var(--dsw-alias-label-primary-dimmed)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-scrollbar-bg-l1",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-200)",
+      "dark": "var(--dsw-static-neutral-700)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-scrollbar-bg-l2",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-200)",
+      "dark": "var(--dsw-static-neutral-600)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-scrollbar-hover-l1",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-300)",
+      "dark": "var(--dsw-static-neutral-600)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-scrollbar-hover-l2",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-300)",
+      "dark": "var(--dsw-static-neutral-550)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-settings-card-fill",
+      "sheet": "base",
+      "light": "var(--dsw-alias-bg-layer-2)",
+      "dark": "var(--dsw-alias-bg-layer-2)",
+      "selectors": [
+        "base:body"
+      ]
+    },
+    {
+      "name": "--dsw-alias-settings-card-stroke",
+      "sheet": "base",
+      "light": "var(--dsw-alias-border-l4)",
+      "dark": "var(--dsw-alias-border-l4)",
+      "selectors": [
+        "base:body"
+      ]
+    },
+    {
+      "name": "--dsw-alias-state-business-primary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-deepseek-500)",
+      "dark": "var(--dsw-static-deepseek-400)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-state-business-tertiary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-deepseek-100)",
+      "dark": "var(--dsw-static-deepseek-800)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-state-error-primary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-red-600)",
+      "dark": "var(--dsw-static-red-400)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-state-error-secondary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-red-400)",
+      "dark": "var(--dsw-static-red-400)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-state-idle-primary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-300)",
+      "dark": "var(--dsw-static-neutral-600)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-state-success-primary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-green-500)",
+      "dark": "var(--dsw-static-green-500)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-state-success-secondary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-green-400)",
+      "dark": "var(--dsw-static-green-400)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-state-success-tertiary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-green-100)",
+      "dark": "var(--dsw-static-green-900)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-state-warn-label",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-amber-600)",
+      "dark": "var(--dsw-static-amber-600)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-state-warn-primary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-amber-500)",
+      "dark": "var(--dsw-static-amber-500)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-state-warn-secondary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-amber-400)",
+      "dark": "var(--dsw-static-amber-400)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-state-warn-tertiary",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-amber-100)",
+      "dark": "var(--dsw-static-amber-900)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-switch-thumb",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-00)",
+      "dark": "var(--dsw-static-neutral-bluish-400)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-toast-bg",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-800)",
+      "dark": "var(--dsw-static-neutral-bluish-750)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-toast-label",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-00)",
+      "dark": "var(--dsw-static-neutral-bluish-00)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-tooltip-bg",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-850)",
+      "dark": "var(--dsw-static-neutral-bluish-750)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-tooltip-key-bg",
+      "sheet": "design-platform",
+      "light": "color-mix(in srgb, var(--dsw-alias-tooltip-bg), white 18%)",
+      "dark": "color-mix(in srgb, var(--dsw-alias-tooltip-bg), white 18%)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-turn-trigger-bg",
+      "sheet": "design-platform",
+      "light": "var(--dsw-alias-markdown-code-block)",
+      "dark": "var(--dsw-alias-interactive-bg-hover)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-alias-turn-trigger-bg-hover",
+      "sheet": "design-platform",
+      "light": "var(--dsw-alias-interactive-bg-hover)",
+      "dark": "var(--dsw-alias-interactive-bg-active)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-elevation-panel",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-elevation-stroke), 0 3px 8px 0 #00000008, 0 0 16px 0 #00000005",
+      "dark": "var(--dsw-elevation-stroke), 0 3px 8px 0 #00000008, 0 0 16px 0 #00000005",
+      "selectors": [
+        "gradient-shadow-text:body,body *"
+      ]
+    },
+    {
+      "name": "--dsw-elevation-prominent",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-elevation-stroke), 0 3px 8px 0 #0000000a, 0 0 20px 0 #0000000d",
+      "dark": "var(--dsw-elevation-stroke), 0 3px 8px 0 #0000000a, 0 0 20px 0 #0000000d",
+      "selectors": [
+        "gradient-shadow-text:body,body *"
+      ]
+    },
+    {
+      "name": "--dsw-elevation-soft",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-elevation-stroke), 0 4px 16px 0 #00000008, 0 0 24px 0 #00000008",
+      "dark": "var(--dsw-elevation-stroke), 0 4px 16px 0 #00000008, 0 0 24px 0 #00000008",
+      "selectors": [
+        "gradient-shadow-text:body,body *"
+      ]
+    },
+    {
+      "name": "--dsw-elevation-stroke",
+      "sheet": "gradient-shadow-text",
+      "light": "0 0 0 .5px var(--dsw-elevation-stroke-color)",
+      "dark": "0 0 0 .5px var(--dsw-elevation-stroke-color)",
+      "selectors": [
+        "gradient-shadow-text:body,body *"
+      ]
+    },
+    {
+      "name": "--dsw-elevation-stroke-color",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-alias-border-l4)",
+      "dark": "var(--dsw-alias-border-l3)",
+      "selectors": [
+        "gradient-shadow-text:body",
+        "gradient-shadow-text:body[data-ds-dark-theme] [data-menu-material]"
+      ]
+    },
+    {
+      "name": "--dsw-focus-ring-color",
+      "sheet": "focus",
+      "light": "transparent",
+      "dark": "transparent",
+      "selectors": [
+        "focus:html[data-input-modality=pointer] body :focus-visible:not(:read-write)"
+      ]
+    },
+    {
+      "name": "--dsw-focus-ring-width",
+      "sheet": "focus",
+      "light": "2px",
+      "dark": "2px",
+      "selectors": [
+        "focus::root"
+      ]
+    },
+    {
+      "name": "--dsw-font-base-16",
+      "sheet": "gradient-shadow-text",
+      "light": "16px/24px var(--dsw-font-family)",
+      "dark": "16px/24px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-base-16-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-base-16-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "16px",
+      "dark": "16px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-base-16-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-base-16-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "400",
+      "dark": "400",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-base-16-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "24px",
+      "dark": "24px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-base-strong-16",
+      "sheet": "gradient-shadow-text",
+      "light": "500 16px/24px var(--dsw-font-family)",
+      "dark": "500 16px/24px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-base-strong-16-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-base-strong-16-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "16px",
+      "dark": "16px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-base-strong-16-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-base-strong-16-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "500",
+      "dark": "500",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-base-strong-16-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "24px",
+      "dark": "24px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-family",
+      "sheet": "base",
+      "light": "var(--dsh-font-family-text,var(--dsh-font-family-text-default)), var(--dsh-font-family-text-default)",
+      "dark": "var(--dsh-font-family-text-default)",
+      "selectors": [
+        "base::root",
+        "base:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-family-brand",
+      "sheet": "base",
+      "light": "\"Montserrat\", var(--dsh-font-family-text-default)",
+      "dark": "\"Montserrat\", var(--dsh-font-family-text-default)",
+      "selectors": [
+        "base::root"
+      ]
+    },
+    {
+      "name": "--dsw-font-l-20",
+      "sheet": "gradient-shadow-text",
+      "light": "500 20px/28px var(--dsw-font-family)",
+      "dark": "500 20px/28px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-l-20-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-l-20-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "20px",
+      "dark": "20px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-l-20-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-l-20-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "500",
+      "dark": "500",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-l-20-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "28px",
+      "dark": "28px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-m-18",
+      "sheet": "gradient-shadow-text",
+      "light": "500 16px/28px var(--dsw-font-family)",
+      "dark": "500 16px/28px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-m-18-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-m-18-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "16px",
+      "dark": "16px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-m-18-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-m-18-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "500",
+      "dark": "500",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-m-18-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "28px",
+      "dark": "28px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsh-content-font-size,14px) / calc(24px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "dark": "var(--dsh-content-font-size,14px) / calc(24px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsh-content-font-size,14px)",
+      "dark": "var(--dsh-content-font-size,14px)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "400",
+      "dark": "400",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-italic",
+      "sheet": "gradient-shadow-text",
+      "light": "italic var(--dsh-content-font-size,14px) / calc(24px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "dark": "italic var(--dsh-content-font-size,14px) / calc(24px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-italic-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-italic-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsh-content-font-size,14px)",
+      "dark": "var(--dsh-content-font-size,14px)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-italic-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "italic",
+      "dark": "italic",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-italic-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "400",
+      "dark": "400",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-italic-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(24px + var(--dsh-content-font-delta))",
+      "dark": "calc(24px + var(--dsh-content-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(24px + var(--dsh-content-font-delta))",
+      "dark": "calc(24px + var(--dsh-content-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-strong",
+      "sheet": "gradient-shadow-text",
+      "light": "600 var(--dsh-content-font-size,14px) / calc(24px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "dark": "600 var(--dsh-content-font-size,14px) / calc(24px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-strong-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-strong-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsh-content-font-size,14px)",
+      "dark": "var(--dsh-content-font-size,14px)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-strong-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-strong-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "600",
+      "dark": "600",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-strong-italic",
+      "sheet": "gradient-shadow-text",
+      "light": "italic 600 var(--dsh-content-font-size,14px) / calc(24px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "dark": "italic 600 var(--dsh-content-font-size,14px) / calc(24px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-strong-italic-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-strong-italic-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsh-content-font-size,14px)",
+      "dark": "var(--dsh-content-font-size,14px)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-strong-italic-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "italic",
+      "dark": "italic",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-strong-italic-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "600",
+      "dark": "600",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-strong-italic-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(24px + var(--dsh-content-font-delta))",
+      "dark": "calc(24px + var(--dsh-content-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-base-strong-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(24px + var(--dsh-content-font-delta))",
+      "dark": "calc(24px + var(--dsh-content-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(12px + var(--dsh-code-font-delta)) / calc(19px + var(--dsh-code-font-delta)) var(--ds-font-family-code)",
+      "dark": "calc(12px + var(--dsh-code-font-delta)) / calc(19px + var(--dsh-code-font-delta)) var(--ds-font-family-code)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-block",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsh-code-font-size,11px) / calc(19px + var(--dsh-code-font-delta)) var(--ds-font-family-code)",
+      "dark": "var(--dsh-code-font-size,11px) / calc(19px + var(--dsh-code-font-delta)) var(--ds-font-family-code)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-block-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--ds-font-family-code)",
+      "dark": "var(--ds-font-family-code)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-block-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsh-code-font-size,11px)",
+      "dark": "var(--dsh-code-font-size,11px)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-block-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-block-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "400",
+      "dark": "400",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-block-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(19px + var(--dsh-code-font-delta))",
+      "dark": "calc(19px + var(--dsh-code-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-block-small",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsh-code-font-size,11px) / calc(16px + var(--dsh-code-font-delta)) var(--ds-font-family-code)",
+      "dark": "var(--dsh-code-font-size,11px) / calc(16px + var(--dsh-code-font-delta)) var(--ds-font-family-code)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-block-small-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--ds-font-family-code)",
+      "dark": "var(--ds-font-family-code)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-block-small-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsh-code-font-size,11px)",
+      "dark": "var(--dsh-code-font-size,11px)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-block-small-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-block-small-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "400",
+      "dark": "400",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-block-small-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(16px + var(--dsh-code-font-delta))",
+      "dark": "calc(16px + var(--dsh-code-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--ds-font-family-code)",
+      "dark": "var(--ds-font-family-code)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(12px + var(--dsh-code-font-delta))",
+      "dark": "calc(12px + var(--dsh-code-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "400",
+      "dark": "400",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-code-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(19px + var(--dsh-code-font-delta))",
+      "dark": "calc(19px + var(--dsh-code-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h1",
+      "sheet": "gradient-shadow-text",
+      "light": "700 calc(21px + var(--dsh-content-font-delta)) / calc(30px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "dark": "700 calc(21px + var(--dsh-content-font-delta)) / calc(30px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h1-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h1-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(21px + var(--dsh-content-font-delta))",
+      "dark": "calc(21px + var(--dsh-content-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h1-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h1-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "700",
+      "dark": "700",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h1-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(30px + var(--dsh-content-font-delta))",
+      "dark": "calc(30px + var(--dsh-content-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h2",
+      "sheet": "gradient-shadow-text",
+      "light": "700 calc(19px + var(--dsh-content-font-delta)) / calc(28px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "dark": "700 calc(19px + var(--dsh-content-font-delta)) / calc(28px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h2-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h2-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(19px + var(--dsh-content-font-delta))",
+      "dark": "calc(19px + var(--dsh-content-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h2-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h2-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "700",
+      "dark": "700",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h2-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(28px + var(--dsh-content-font-delta))",
+      "dark": "calc(28px + var(--dsh-content-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h3",
+      "sheet": "gradient-shadow-text",
+      "light": "700 calc(18px + var(--dsh-content-font-delta)) / calc(26px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "dark": "700 calc(18px + var(--dsh-content-font-delta)) / calc(26px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h3-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h3-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(18px + var(--dsh-content-font-delta))",
+      "dark": "calc(18px + var(--dsh-content-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h3-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h3-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "700",
+      "dark": "700",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h3-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(26px + var(--dsh-content-font-delta))",
+      "dark": "calc(26px + var(--dsh-content-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h4",
+      "sheet": "gradient-shadow-text",
+      "light": "600 var(--dsh-content-font-size,14px) / calc(24px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "dark": "600 var(--dsh-content-font-size,14px) / calc(24px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h4-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h4-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsh-content-font-size,14px)",
+      "dark": "var(--dsh-content-font-size,14px)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h4-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h4-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "600",
+      "dark": "600",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-h4-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(24px + var(--dsh-content-font-delta))",
+      "dark": "calc(24px + var(--dsh-content-font-delta))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small",
+      "sheet": "gradient-shadow-text",
+      "light": "12px/20px var(--dsw-font-family)",
+      "dark": "12px/20px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "12px",
+      "dark": "12px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "400",
+      "dark": "400",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-italic",
+      "sheet": "gradient-shadow-text",
+      "light": "italic 12px/20px var(--dsw-font-family)",
+      "dark": "italic 12px/20px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-italic-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-italic-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "12px",
+      "dark": "12px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-italic-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "italic",
+      "dark": "italic",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-italic-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "400",
+      "dark": "400",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-italic-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "20px",
+      "dark": "20px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "20px",
+      "dark": "20px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-strong",
+      "sheet": "gradient-shadow-text",
+      "light": "600 12px/20px var(--dsw-font-family)",
+      "dark": "600 12px/20px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-strong-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-strong-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "12px",
+      "dark": "12px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-strong-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-strong-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "600",
+      "dark": "600",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-strong-italic",
+      "sheet": "gradient-shadow-text",
+      "light": "italic 600 12px/20px var(--dsw-font-family)",
+      "dark": "italic 600 12px/20px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-strong-italic-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-strong-italic-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "12px",
+      "dark": "12px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-strong-italic-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "italic",
+      "dark": "italic",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-strong-italic-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "600",
+      "dark": "600",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-strong-italic-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "20px",
+      "dark": "20px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-small-strong-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "20px",
+      "dark": "20px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-table",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsh-content-font-size-secondary,13px)/calc(22px + var(--dsh-content-font-delta-secondary,0px)) var(--dsw-font-family)",
+      "dark": "var(--dsh-content-font-size-secondary,13px)/calc(22px + var(--dsh-content-font-delta-secondary,0px)) var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-table-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-table-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsh-content-font-size-secondary,13px)",
+      "dark": "var(--dsh-content-font-size-secondary,13px)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-table-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-table-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "400",
+      "dark": "400",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-table-head",
+      "sheet": "gradient-shadow-text",
+      "light": "500 var(--dsh-content-font-size-secondary,13px)/calc(22px + var(--dsh-content-font-delta-secondary,0px)) var(--dsw-font-family)",
+      "dark": "500 var(--dsh-content-font-size-secondary,13px)/calc(22px + var(--dsh-content-font-delta-secondary,0px)) var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-table-head-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-table-head-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsh-content-font-size-secondary,13px)",
+      "dark": "var(--dsh-content-font-size-secondary,13px)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-table-head-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-table-head-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "500",
+      "dark": "500",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-table-head-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(22px + var(--dsh-content-font-delta-secondary,0px))",
+      "dark": "calc(22px + var(--dsh-content-font-delta-secondary,0px))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-markdown-table-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "calc(22px + var(--dsh-content-font-delta-secondary,0px))",
+      "dark": "calc(22px + var(--dsh-content-font-delta-secondary,0px))",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-s-14",
+      "sheet": "gradient-shadow-text",
+      "light": "14px/22px var(--dsw-font-family)",
+      "dark": "14px/22px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-s-14-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-s-14-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "14px",
+      "dark": "14px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-s-14-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-s-14-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "400",
+      "dark": "400",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-s-14-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "22px",
+      "dark": "22px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-s-strong-14",
+      "sheet": "gradient-shadow-text",
+      "light": "500 14px/22px var(--dsw-font-family)",
+      "dark": "500 14px/22px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-s-strong-14-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-s-strong-14-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "14px",
+      "dark": "14px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-s-strong-14-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-s-strong-14-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "500",
+      "dark": "500",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-s-strong-14-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "22px",
+      "dark": "22px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xl-24",
+      "sheet": "gradient-shadow-text",
+      "light": "600 24px/32px var(--dsw-font-family)",
+      "dark": "600 24px/32px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xl-24-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xl-24-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "24px",
+      "dark": "24px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xl-24-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xl-24-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "600",
+      "dark": "600",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xl-24-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "32px",
+      "dark": "32px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xs-13",
+      "sheet": "gradient-shadow-text",
+      "light": "13px/20px var(--dsw-font-family)",
+      "dark": "13px/20px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xs-13-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xs-13-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "13px",
+      "dark": "13px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xs-13-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xs-13-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "400",
+      "dark": "400",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xs-13-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "20px",
+      "dark": "20px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xs-strong-13",
+      "sheet": "gradient-shadow-text",
+      "light": "500 13px/20px var(--dsw-font-family)",
+      "dark": "500 13px/20px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xs-strong-13-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xs-strong-13-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "13px",
+      "dark": "13px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xs-strong-13-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xs-strong-13-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "500",
+      "dark": "500",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xs-strong-13-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "20px",
+      "dark": "20px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxs-12",
+      "sheet": "gradient-shadow-text",
+      "light": "12px/18px var(--dsw-font-family)",
+      "dark": "12px/18px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxs-12-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxs-12-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "12px",
+      "dark": "12px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxs-12-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxs-12-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "400",
+      "dark": "400",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxs-12-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "18px",
+      "dark": "18px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxs-strong-12",
+      "sheet": "gradient-shadow-text",
+      "light": "500 12px/18px var(--dsw-font-family)",
+      "dark": "500 12px/18px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxs-strong-12-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxs-strong-12-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "12px",
+      "dark": "12px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxs-strong-12-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxs-strong-12-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "500",
+      "dark": "500",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxs-strong-12-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "18px",
+      "dark": "18px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxxs-11",
+      "sheet": "gradient-shadow-text",
+      "light": "11px/14px var(--dsw-font-family)",
+      "dark": "11px/14px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxxs-11-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxxs-11-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "11px",
+      "dark": "11px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxxs-11-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxxs-11-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "400",
+      "dark": "400",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxxs-11-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "14px",
+      "dark": "14px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxxs-strong-11",
+      "sheet": "gradient-shadow-text",
+      "light": "500 11px/14px var(--dsw-font-family)",
+      "dark": "500 11px/14px var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxxs-strong-11-font-family",
+      "sheet": "gradient-shadow-text",
+      "light": "var(--dsw-font-family)",
+      "dark": "var(--dsw-font-family)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxxs-strong-11-font-size",
+      "sheet": "gradient-shadow-text",
+      "light": "11px",
+      "dark": "11px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxxs-strong-11-font-style",
+      "sheet": "gradient-shadow-text",
+      "light": "normal",
+      "dark": "normal",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxxs-strong-11-font-weight",
+      "sheet": "gradient-shadow-text",
+      "light": "500",
+      "dark": "500",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-font-xxxs-strong-11-line-height",
+      "sheet": "gradient-shadow-text",
+      "light": "14px",
+      "dark": "14px",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-linear-gradient-think",
+      "sheet": "gradient-shadow-text",
+      "light": "linear-gradient(180deg, #fff 20.19%, #fff0 100%)",
+      "dark": "linear-gradient(180deg, #151517 20.19%, #15151700 100%)",
+      "selectors": [
+        "gradient-shadow-text:body",
+        "gradient-shadow-text:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-linear-think-select",
+      "sheet": "gradient-shadow-text",
+      "light": "linear-gradient(180deg, #f5f6f7 20.19%, #f5f6f700 100%)",
+      "dark": "linear-gradient(180deg, #232325 20.19%, #23232500 100%)",
+      "selectors": [
+        "gradient-shadow-text:body",
+        "gradient-shadow-text:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-mask-blur",
+      "sheet": "gradient-shadow-text",
+      "light": "none",
+      "dark": "none",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-menu-backdrop-filter",
+      "sheet": "gradient-shadow-text",
+      "light": "blur(40px) saturate(150%)",
+      "dark": "blur(40px) saturate(150%)",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-menu-surface-fill",
+      "sheet": "design-platform",
+      "light": "#f8f9fa94",
+      "dark": "#43454a73",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-radius-lg",
+      "sheet": "base",
+      "light": "16px",
+      "dark": "16px",
+      "selectors": [
+        "base::root"
+      ]
+    },
+    {
+      "name": "--dsw-radius-md",
+      "sheet": "base",
+      "light": "12px",
+      "dark": "12px",
+      "selectors": [
+        "base::root"
+      ]
+    },
+    {
+      "name": "--dsw-radius-panel",
+      "sheet": "base",
+      "light": "28px",
+      "dark": "28px",
+      "selectors": [
+        "base::root"
+      ]
+    },
+    {
+      "name": "--dsw-radius-sm",
+      "sheet": "base",
+      "light": "8px",
+      "dark": "8px",
+      "selectors": [
+        "base::root"
+      ]
+    },
+    {
+      "name": "--dsw-radius-xl",
+      "sheet": "base",
+      "light": "20px",
+      "dark": "20px",
+      "selectors": [
+        "base::root"
+      ]
+    },
+    {
+      "name": "--dsw-radius-xs",
+      "sheet": "base",
+      "light": "4px",
+      "dark": "4px",
+      "selectors": [
+        "base::root"
+      ]
+    },
+    {
+      "name": "--dsw-shadow-lv1",
+      "sheet": "gradient-shadow-text",
+      "light": "0 2px 4px 0 #0000000d",
+      "dark": "0 2px 4px 0 #0000000d",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-shadow-lv1-blur",
+      "sheet": "gradient-shadow-text",
+      "light": "0 4px 12px 0 #00000005",
+      "dark": "0 4px 12px 0 #00000005",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-shadow-lv2",
+      "sheet": "gradient-shadow-text",
+      "light": "0 4px 12px 0 #00000005, 0 2px 8px 0 #0000000a",
+      "dark": "0 4px 12px 0 #00000005, 0 2px 8px 0 #0000000a",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-shadow-lv3",
+      "sheet": "gradient-shadow-text",
+      "light": "0 0 1px 0 #0003, 0 0 4px 0 #00000005, 0 12px 32px 0 #00000014",
+      "dark": "0 0 1px 0 #0003, 0 0 4px 0 #00000005, 0 12px 32px 0 #00000014",
+      "selectors": [
+        "gradient-shadow-text:body"
+      ]
+    },
+    {
+      "name": "--dsw-specific-bubble",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-deepseek-50)",
+      "dark": "var(--dsw-static-neutral-bluish-850)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-specific-bubble-highlight",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-deepseek-200)",
+      "dark": "var(--dsw-static-neutral-bluish-750)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-specific-input-major",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-00)",
+      "dark": "var(--dsw-static-neutral-bluish-850)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-specific-login-input",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-50)",
+      "dark": "var(--dsw-static-neutral-bluish-900)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-specific-menu",
+      "sheet": "design-platform",
+      "light": "var(--dsw-menu-surface-fill)",
+      "dark": "var(--dsw-menu-surface-fill)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]",
+        "design-platform:html[data-platform=darwin] body",
+        "design-platform:html[data-platform=darwin] body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-specific-selector",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-60)",
+      "dark": "var(--dsw-static-neutral-bluish-800)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-specific-sidebar-fill",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-50)",
+      "dark": "var(--dsw-static-neutral-bluish-900)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-specific-sidebar-nav-item-active",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-100)",
+      "dark": "var(--dsw-static-neutral-bluish-750)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-specific-sidebar-nav-item-active-accent",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-deepseek-100)",
+      "dark": "var(--dsw-static-neutral-bluish-800)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-specific-sidebar-nav-item-hover",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-75)",
+      "dark": "var(--dsw-static-neutral-bluish-850)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-specific-tip",
+      "sheet": "design-platform",
+      "light": "var(--dsw-static-neutral-bluish-60)",
+      "dark": "var(--dsw-static-neutral-bluish-800)",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-amber-100",
+      "sheet": "design-platform",
+      "light": "#fef5e7",
+      "dark": "#fef5e7",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-amber-400",
+      "sheet": "design-platform",
+      "light": "#f7ad31",
+      "dark": "#f7ad31",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-amber-500",
+      "sheet": "design-platform",
+      "light": "#f59e0b",
+      "dark": "#f59e0b",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-amber-600",
+      "sheet": "design-platform",
+      "light": "#dd8629",
+      "dark": "#dd8629",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-amber-900",
+      "sheet": "design-platform",
+      "light": "#27241f",
+      "dark": "#27241f",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-blue-100",
+      "sheet": "design-platform",
+      "light": "#dbeafe",
+      "dark": "#dbeafe",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-blue-300",
+      "sheet": "design-platform",
+      "light": "#93c5fd",
+      "dark": "#93c5fd",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-blue-400",
+      "sheet": "design-platform",
+      "light": "#60a5fa",
+      "dark": "#60a5fa",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-blue-450",
+      "sheet": "design-platform",
+      "light": "#4d93f8",
+      "dark": "#4d93f8",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-blue-50",
+      "sheet": "design-platform",
+      "light": "#eff6ff",
+      "dark": "#eff6ff",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-blue-500",
+      "sheet": "design-platform",
+      "light": "#3b82f6",
+      "dark": "#3b82f6",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-blue-50p",
+      "sheet": "design-platform",
+      "light": "#eaf3ff",
+      "dark": "#eaf3ff",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-blue-600",
+      "sheet": "design-platform",
+      "light": "#2563eb",
+      "dark": "#2563eb",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-blue-75",
+      "sheet": "design-platform",
+      "light": "#e5f0ff",
+      "dark": "#e5f0ff",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-blue-800",
+      "sheet": "design-platform",
+      "light": "#1e40af",
+      "dark": "#1e40af",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-blue-900",
+      "sheet": "design-platform",
+      "light": "#0e3074",
+      "dark": "#0e3074",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-blue-950",
+      "sheet": "design-platform",
+      "light": "#172554",
+      "dark": "#172554",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-deepseek-100",
+      "sheet": "design-platform",
+      "light": "#e4edfd",
+      "dark": "#e4edfd",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-deepseek-200",
+      "sheet": "design-platform",
+      "light": "#d3e2ff",
+      "dark": "#d3e2ff",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-deepseek-300",
+      "sheet": "design-platform",
+      "light": "#b7c8fe",
+      "dark": "#b7c8fe",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-deepseek-400",
+      "sheet": "design-platform",
+      "light": "#7aaaff",
+      "dark": "#7aaaff",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-deepseek-450",
+      "sheet": "design-platform",
+      "light": "#5686fe",
+      "dark": "#5686fe",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-deepseek-50",
+      "sheet": "design-platform",
+      "light": "#edf3fe",
+      "dark": "#edf3fe",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-deepseek-500",
+      "sheet": "design-platform",
+      "light": "#4176e6",
+      "dark": "#4176e6",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-deepseek-600",
+      "sheet": "design-platform",
+      "light": "#4868b2",
+      "dark": "#4868b2",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-deepseek-700-delete",
+      "sheet": "design-platform",
+      "light": "#2f4c8f",
+      "dark": "#2f4c8f",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-deepseek-800",
+      "sheet": "design-platform",
+      "light": "#34415b",
+      "dark": "#34415b",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-deepseek-900",
+      "sheet": "design-platform",
+      "light": "#283142",
+      "dark": "#283142",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-green-100",
+      "sheet": "design-platform",
+      "light": "#e6faed",
+      "dark": "#e6faed",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-green-400",
+      "sheet": "design-platform",
+      "light": "#4ed17e",
+      "dark": "#4ed17e",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-green-500",
+      "sheet": "design-platform",
+      "light": "#22c55e",
+      "dark": "#22c55e",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-green-500-a08",
+      "sheet": "design-platform",
+      "light": "#22c55e14",
+      "dark": "#22c55e14",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-green-500-a12",
+      "sheet": "design-platform",
+      "light": "#22c55e1f",
+      "dark": "#22c55e1f",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-green-900",
+      "sheet": "design-platform",
+      "light": "#233c2c",
+      "dark": "#233c2c",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-00",
+      "sheet": "design-platform",
+      "light": "#fff",
+      "dark": "#fff",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-100",
+      "sheet": "design-platform",
+      "light": "#f5f5f5",
+      "dark": "#f5f5f5",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-1000",
+      "sheet": "design-platform",
+      "light": "#000",
+      "dark": "#000",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-150",
+      "sheet": "design-platform",
+      "light": "#ededed",
+      "dark": "#ededed",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-200",
+      "sheet": "design-platform",
+      "light": "#e5e5e5",
+      "dark": "#e5e5e5",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-250",
+      "sheet": "design-platform",
+      "light": "#dcdcdc",
+      "dark": "#dcdcdc",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-300",
+      "sheet": "design-platform",
+      "light": "#d4d4d4",
+      "dark": "#d4d4d4",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-400",
+      "sheet": "design-platform",
+      "light": "#a2a4a6",
+      "dark": "#a2a4a6",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-50",
+      "sheet": "design-platform",
+      "light": "#fafafa",
+      "dark": "#fafafa",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-500",
+      "sheet": "design-platform",
+      "light": "#7f8287",
+      "dark": "#7f8287",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-550",
+      "sheet": "design-platform",
+      "light": "#65676b",
+      "dark": "#65676b",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-600",
+      "sheet": "design-platform",
+      "light": "#545557",
+      "dark": "#545557",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-700",
+      "sheet": "design-platform",
+      "light": "#3c3c3d",
+      "dark": "#3c3c3d",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-800",
+      "sheet": "design-platform",
+      "light": "#292929",
+      "dark": "#292929",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-850",
+      "sheet": "design-platform",
+      "light": "#212123",
+      "dark": "#212123",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-900",
+      "sheet": "design-platform",
+      "light": "#0f0f0f",
+      "dark": "#0f0f0f",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-00",
+      "sheet": "design-platform",
+      "light": "#fff",
+      "dark": "#fff",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-100",
+      "sheet": "design-platform",
+      "light": "#ebeef2",
+      "dark": "#ebeef2",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-1000",
+      "sheet": "design-platform",
+      "light": "#0f1115",
+      "dark": "#0f1115",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-150",
+      "sheet": "design-platform",
+      "light": "#e9ecf2",
+      "dark": "#e9ecf2",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-200",
+      "sheet": "design-platform",
+      "light": "#e1e5ee",
+      "dark": "#e1e5ee",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-300",
+      "sheet": "design-platform",
+      "light": "#cfd3d6",
+      "dark": "#cfd3d6",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-400",
+      "sheet": "design-platform",
+      "light": "#adb2b8",
+      "dark": "#adb2b8",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-50",
+      "sheet": "design-platform",
+      "light": "#f9fafb",
+      "dark": "#f9fafb",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-500",
+      "sheet": "design-platform",
+      "light": "#979da6",
+      "dark": "#979da6",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-60",
+      "sheet": "design-platform",
+      "light": "#f5f6f7",
+      "dark": "#f9fafb",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-600",
+      "sheet": "design-platform",
+      "light": "#81858c",
+      "dark": "#81858c",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-700",
+      "sheet": "design-platform",
+      "light": "#61666b",
+      "dark": "#61666b",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-75",
+      "sheet": "design-platform",
+      "light": "#f1f3f5",
+      "dark": "#f1f3f5",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-750",
+      "sheet": "design-platform",
+      "light": "#43454a",
+      "dark": "#43454a",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-800",
+      "sheet": "design-platform",
+      "light": "#353638",
+      "dark": "#353638",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-850",
+      "sheet": "design-platform",
+      "light": "#2c2c2e",
+      "dark": "#2c2c2e",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-875",
+      "sheet": "design-platform",
+      "light": "#232324",
+      "dark": "#232324",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-900",
+      "sheet": "design-platform",
+      "light": "#1b1b1c",
+      "dark": "#1b1b1c",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-neutral-bluish-950",
+      "sheet": "design-platform",
+      "light": "#151517",
+      "dark": "#151517",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-red-100",
+      "sheet": "design-platform",
+      "light": "#fee2e2",
+      "dark": "#fee2e2",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-red-400",
+      "sheet": "design-platform",
+      "light": "#f25a5a",
+      "dark": "#f25a5a",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-red-400-a12",
+      "sheet": "design-platform",
+      "light": "#f25a5a1f",
+      "dark": "#f25a5a1f",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-red-50",
+      "sheet": "design-platform",
+      "light": "#fef2f2",
+      "dark": "#fef2f2",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-red-500",
+      "sheet": "design-platform",
+      "light": "#ef4444",
+      "dark": "#ef4444",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-red-600",
+      "sheet": "design-platform",
+      "light": "#ec1313",
+      "dark": "#ec1313",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-red-600-a08",
+      "sheet": "design-platform",
+      "light": "#ec131314",
+      "dark": "#ec131314",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--dsw-static-red-900",
+      "sheet": "design-platform",
+      "light": "#570c0c",
+      "dark": "#570c0c",
+      "selectors": [
+        "design-platform:body",
+        "design-platform:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--shiki-background",
+      "sheet": "shiki",
+      "light": "var(--dsw-alias-markdown-code-block)",
+      "dark": "var(--dsw-alias-markdown-code-block)",
+      "selectors": [
+        "shiki::root"
+      ]
+    },
+    {
+      "name": "--shiki-foreground",
+      "sheet": "shiki",
+      "light": "var(--dsw-alias-label-primary)",
+      "dark": "var(--dsw-alias-label-primary)",
+      "selectors": [
+        "shiki::root"
+      ]
+    },
+    {
+      "name": "--shiki-token-comment",
+      "sheet": "shiki",
+      "light": "#868e96",
+      "dark": "#adb5bd",
+      "selectors": [
+        "shiki::root",
+        "shiki:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--shiki-token-constant",
+      "sheet": "shiki",
+      "light": "#1c7ed6",
+      "dark": "#4dabf7",
+      "selectors": [
+        "shiki::root",
+        "shiki:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--shiki-token-function",
+      "sheet": "shiki",
+      "light": "#6741d9",
+      "dark": "#b197fc",
+      "selectors": [
+        "shiki::root",
+        "shiki:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--shiki-token-keyword",
+      "sheet": "shiki",
+      "light": "#d6336c",
+      "dark": "#faa2c1",
+      "selectors": [
+        "shiki::root",
+        "shiki:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--shiki-token-link",
+      "sheet": "shiki",
+      "light": "#1971c2",
+      "dark": "#74c0fc",
+      "selectors": [
+        "shiki::root",
+        "shiki:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--shiki-token-parameter",
+      "sheet": "shiki",
+      "light": "#e8590c",
+      "dark": "#ffa94d",
+      "selectors": [
+        "shiki::root",
+        "shiki:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--shiki-token-punctuation",
+      "sheet": "shiki",
+      "light": "#495057",
+      "dark": "#ced4da",
+      "selectors": [
+        "shiki::root",
+        "shiki:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--shiki-token-string",
+      "sheet": "shiki",
+      "light": "#2f9e44",
+      "dark": "#69db7c",
+      "selectors": [
+        "shiki::root",
+        "shiki:body[data-ds-dark-theme]"
+      ]
+    },
+    {
+      "name": "--shiki-token-string-expression",
+      "sheet": "shiki",
+      "light": "#2b8a3e",
+      "dark": "#8ce99a",
+      "selectors": [
+        "shiki::root",
+        "shiki:body[data-ds-dark-theme]"
+      ]
+    }
+  ]
+}

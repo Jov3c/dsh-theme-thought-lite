@@ -1,0 +1,70 @@
+{
+  "note": "CSS hooks the skin's structural rules attach to, and where each one lives in the installed DSH (0.2.1-rc.2). `local` is the CSS-module name; the shipped class is `<hash>_<local>`, so attribute-contains selectors [class*=\"_<local>\"] are stable. Regenerate after a DSH upgrade: node scripts/extract-dsh-tokens.mjs <ui-theme css dir> … and re-check these names against the client bundles.",
+  "dshVersion": "0.2.1-rc.2",
+  "hooks": [
+    {
+      "hook": "_markdown_",
+      "kind": "attribute-contains",
+      "selector": "[class*=\"_markdown_\"]",
+      "module": "@deepseek-ai/dsh-web-frontend/dist/assets/index-*.css",
+      "local": "_markdown_1ypvv_5",
+      "usedFor": "reading surface: headings rules, links, hr, blockquote, tables, code, lists"
+    },
+    {
+      "hook": "md-code-block",
+      "kind": "class",
+      "selector": ".md-code-block",
+      "module": "@deepseek-ai/dsh-web-frontend/dist/assets/index-*.css",
+      "local": "md-code-block",
+      "usedFor": "fenced code container: hairline + square corners"
+    },
+    {
+      "hook": "data-ds-dark-theme",
+      "kind": "attribute",
+      "selector": "body[data-ds-dark-theme]",
+      "module": "@deepseek-ai/dsh-client-ui-theme/lib/styles/design-platform.css",
+      "local": null,
+      "usedFor": "documented dark-scheme attribute; the skin itself does not need it because tokens carry both modes"
+    },
+    {
+      "hook": "_bubble",
+      "kind": "attribute-contains",
+      "selector": "[class*=\"_bubble\"]",
+      "module": "@deepseek-ai/dsh-client-ui-chat/MessageItem.module.css",
+      "local": "bubble",
+      "usedFor": "the user's own turn: flat block with an ink rail instead of a chat bubble"
+    },
+    {
+      "hook": "_composerStack",
+      "kind": "attribute-contains",
+      "selector": "[class*=\"_composerStack\"]",
+      "module": "@deepseek-ai/dsh-client-ui-conversation/ConversationRoot.module.css",
+      "local": "composerStack",
+      "usedFor": "composer column, used as the ancestor scope for the input rule"
+    },
+    {
+      "hook": "_input",
+      "kind": "attribute-contains",
+      "selector": "[class*=\"_composerStack\"] [class*=\"_input\"]",
+      "module": "@deepseek-ai/dsh-client-ui-conversation/InputBar.module.css",
+      "local": "input",
+      "usedFor": "composer field: 2px corners instead of the stock soft card"
+    },
+    {
+      "hook": "_logoRow",
+      "kind": "attribute-contains",
+      "selector": "[class*=\"_logoRow\"]",
+      "module": "@deepseek-ai/dsh-client-ui-sidebar/SidebarRoot.module.css",
+      "local": "logoRow",
+      "usedFor": "sidebar masthead: hairline under the wordmark"
+    },
+    {
+      "hook": "_panelRow",
+      "kind": "attribute-contains",
+      "selector": "[class*=\"_panelRow\"]",
+      "module": "@deepseek-ai/dsh-client-ui-sidebar/SidebarRoot.module.css",
+      "local": "panelRow",
+      "usedFor": "sidebar entries as a ruled list rather than rounded pills"
+    }
+  ]
+}

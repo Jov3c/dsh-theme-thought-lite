@@ -1,0 +1,19 @@
+# dsh-theme-thought-lite bundle patch
+#
+# This is the `dsh.bundle.patch` layer of the package. Installing it through the
+# official CLI
+#
+#   dsh plugin --profile desktop add link:D:\path\to\dsh-theme-thought-lite
+#
+# makes the profile boot merge this patch — one `insert` of the plugin row,
+# exactly like a manual `cordis.patch.yml` mount line, but without editing any
+# profile file by hand. `dsh plugin add` also appends the package to
+# `dsh.profile.bundles` because this file is declared in package.json.
+#
+# To stop using the skin, remove the bundle line:
+#
+#   dsh plugin --profile desktop remove dsh-theme-thought-lite
+#
+- insert:
+    - id: theme-thought-lite
+      name: 'dsh-theme-thought-lite'

@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ThoughtLite · DSH 皮肤预览</title>
+<style>
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif";
+  background: #e8e8e4;
+  color: #2a2a28;
+}
+.page-head {
+  padding: 28px 32px 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  border-bottom: 1px solid #0000001a;
+}
+.page-head h1 { font-family: "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"; font-size: 22px; margin: 0; letter-spacing: 0.01em; }
+.page-head p { margin: 0; color: #6b6b67; font-size: 12.5px; }
+.panels { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 24px 32px 40px; align-items: start; }
+@media (max-width: 1080px) { .panels { grid-template-columns: 1fr; } }
+.panel {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px #00000014, 0 18px 40px #00000012;
+}
+.panel[data-mode="light"] {   --dsw-static-neutral-bluish-00: #fdfcf6;
+  --dsw-static-neutral-bluish-50: #f8f6ec;
+  --dsw-static-neutral-bluish-60: #f3f0e3;
+  --dsw-static-neutral-bluish-75: #ece8d8;
+  --dsw-static-neutral-bluish-100: #ece8da;
+  --dsw-static-neutral-bluish-150: #e4dfcf;
+  --dsw-static-neutral-bluish-200: #d8d2bf;
+  --dsw-static-neutral-bluish-300: #c2c2bd;
+  --dsw-static-neutral-bluish-400: #a2a29e;
+  --dsw-static-neutral-bluish-500: #8c8c88;
+  --dsw-static-neutral-bluish-600: #7e7e7b;
+  --dsw-static-neutral-bluish-700: #64645f;
+  --dsw-static-neutral-bluish-750: #4d4d49;
+  --dsw-static-neutral-bluish-800: #3b3b38;
+  --dsw-static-neutral-bluish-850: #2e2e2b;
+  --dsw-static-neutral-bluish-875: #262524;
+  --dsw-static-neutral-bluish-900: #1e1e1e;
+  --dsw-static-neutral-bluish-950: #141413;
+  --dsw-static-neutral-bluish-1000: #0e0e0c;
+  --dsw-static-neutral-00: #ffffff;
+  --dsw-static-neutral-50: #fafafa;
+  --dsw-static-neutral-100: #f5f5f5;
+  --dsw-static-neutral-150: #ededed;
+  --dsw-static-neutral-200: #e5e5e5;
+  --dsw-static-neutral-250: #dcdcdc;
+  --dsw-static-neutral-300: #d4d4d2;
+  --dsw-static-neutral-400: #a4a4a2;
+  --dsw-static-neutral-500: #83837f;
+  --dsw-static-neutral-550: #6b6b67;
+  --dsw-static-neutral-600: #565651;
+  --dsw-static-neutral-700: #3c3c3a;
+  --dsw-static-neutral-800: #292927;
+  --dsw-static-neutral-850: #212120;
+  --dsw-static-neutral-900: #0f0f0e;
+  --dsw-static-neutral-1000: #000000;
+  --dsw-static-deepseek-50: #f0ede0;
+  --dsw-static-deepseek-100: #e6e6e2;
+  --dsw-static-deepseek-200: #dcdcd7;
+  --dsw-static-deepseek-300: #c9c9c4;
+  --dsw-static-deepseek-400: #3b3b38;
+  --dsw-static-deepseek-450: #4a4a46;
+  --dsw-static-deepseek-500: #2a2a28;
+  --dsw-static-deepseek-600: #3f3f3b;
+  --dsw-static-deepseek-700-delete: #2f2f2c;
+  --dsw-static-deepseek-800: #262624;
+  --dsw-static-deepseek-900: #1c1c1a;
+  --dsw-static-blue-50: #fafaf7;
+  --dsw-static-blue-50p: #f6f6f2;
+  --dsw-static-blue-75: #f1f1ed;
+  --dsw-static-blue-100: #e9e9e5;
+  --dsw-static-blue-300: #c2c2bd;
+  --dsw-static-blue-400: #a2a29e;
+  --dsw-static-blue-450: #8c8c88;
+  --dsw-static-blue-500: #7e7e7b;
+  --dsw-static-blue-600: #64645f;
+  --dsw-static-blue-800: #3b3b38;
+  --dsw-static-blue-900: #2a2a28;
+  --dsw-static-blue-950: #1e1e1e;
+  --dsw-static-green-100: #eaf3e6;
+  --dsw-static-green-400: #6fbf5a;
+  --dsw-static-green-500: #48a131;
+  --dsw-static-green-500-a08: #48a13114;
+  --dsw-static-green-500-a12: #48a1311f;
+  --dsw-static-green-900: #233c2c;
+  --dsw-static-red-50: #fdf1f1;
+  --dsw-static-red-100: #fbe3e3;
+  --dsw-static-red-400: #f26b6b;
+  --dsw-static-red-400-a12: #f26b6b1f;
+  --dsw-static-red-500: #f04a4a;
+  --dsw-static-red-600: #ee3838;
+  --dsw-static-red-600-a08: #ee383814;
+  --dsw-static-red-900: #570c0c;
+  --dsw-static-amber-100: #fbf1dd;
+  --dsw-static-amber-400: #d9a13a;
+  --dsw-static-amber-500: #bf8700;
+  --dsw-static-amber-600: #a37100;
+  --dsw-static-amber-900: #27241f;
+  --dsw-alias-label-primary: #2a2a28;
+  --dsw-alias-label-primary-bluish: #2a2a28;
+  --dsw-alias-label-primary-dimmed: #3b3b38;
+  --dsw-alias-label-primary-foreground: #fffffd;
+  --dsw-alias-label-primary-inverted: #fffffd;
+  --dsw-alias-label-secondary: #73736f;
+  --dsw-alias-label-tertiary: #9f9f9c;
+  --dsw-alias-label-caption: #a8a8a4;
+  --dsw-alias-label-dimmed: #c2c2bd;
+  --dsw-alias-label-document-preview: #3b3b38;
+  --dsw-alias-label-shimmer: #0000004d;
+  --dsw-alias-label-deep-diving: #2a2a28;
+  --dsw-alias-label-deep-diving-shimmer: #b5b5b0;
+  --dsw-alias-link: #2a2a28;
+  --dsw-alias-menu-icon: #3b3b38;
+  --dsw-alias-bg-base: #fdfcf6;
+  --dsw-alias-bg-layer-1: #fdfcf6;
+  --dsw-alias-bg-layer-2: #fdfcf6;
+  --dsw-alias-bg-layer-3: #fdfcf6;
+  --dsw-alias-bg-overlay: #e4e0d0;
+  --dsw-alias-bg-module-platform: #f3f0e3;
+  --dsw-alias-bg-multi-select: #f3f0e3;
+  --dsw-alias-bg-document-preview: #f0ede0;
+  --dsw-alias-bg-document-selection: #adadacc3;
+  --dsw-alias-bg-skeleton: #2a2a280d;
+  --dsw-alias-bg-mask-1: #2a2a284d;
+  --dsw-alias-bg-mask-2: #2a2a2814;
+  --dsw-alias-bg-mask-3: #2a2a2880;
+  --dsw-alias-bg-mask-drop: #fffffdb3;
+  --dsw-alias-bg-mask-photo: #000000e0;
+  --dsw-alias-border-l1: #2a2a2814;
+  --dsw-alias-border-l2: #2a2a2824;
+  --dsw-alias-border-l2-darkmode-thin: #2a2a2824;
+  --dsw-alias-border-l3: #2a2a283b;
+  --dsw-alias-border-l4: #2a2a2852;
+  --dsw-alias-border-inverted: #00000000;
+  --dsw-alias-border-inverted2: #00000000;
+  --dsw-alias-interactive-bg-hover: #2a2a2810;
+  --dsw-alias-interactive-bg-active: #2a2a281f;
+  --dsw-alias-interactive-bg-hover-accent: #2a2a2826;
+  --dsw-alias-interactive-bg-hover-danger: #ee38380d;
+  --dsw-alias-interactive-bg-hover-solid: #ece8d8;
+  --dsw-alias-brand-primary: #2a2a28;
+  --dsw-alias-brand-primary-invert: #2a2a28;
+  --dsw-alias-brand-primary-new-colorprimary-new-color: #2a2a28;
+  --dsw-alias-brand-text: #2a2a28;
+  --dsw-alias-button-primary-fill: #2a2a28;
+  --dsw-alias-button-primary-hover: #3f3f3b;
+  --dsw-alias-button-primary-dimmed: #ece8d8;
+  --dsw-alias-button-contrast-fill: #4d4d49;
+  --dsw-alias-button-info-fill: #2a2a28;
+  --dsw-alias-button-info-hover: #3f3f3b;
+  --dsw-alias-button-elevated-fill: #fdfcf6;
+  --dsw-alias-button-floating-fill: #fdfcf6;
+  --dsw-alias-button-floating-hover: #ece8d8;
+  --dsw-alias-button-ghost-active-fill: #e9e9e5;
+  --dsw-alias-button-ghost-active-hover: #e2e2de;
+  --dsw-alias-button-ghost-active-border: #8c8c88;
+  --dsw-alias-button-tool-bar-fill: #2a2a2880;
+  --dsw-alias-button-tool-bar-fill-invisible: #1f1f1f5c;
+  --dsw-alias-button-tool-bar-hover: #2a2a2899;
+  --dsw-alias-switch-thumb: #fffffd;
+  --dsw-menu-surface-fill: #fffffdfa;
+  --dsw-alias-menu-group-header-fill: #fffffdf0;
+  --dsw-specific-menu: #fffffdfa;
+  --dsw-specific-selector: #f3f0e3;
+  --dsw-specific-sidebar-fill: #f6f3e8;
+  --dsw-specific-sidebar-nav-item-active: #e9e9e5;
+  --dsw-specific-sidebar-nav-item-active-accent: #e2e2de;
+  --dsw-specific-sidebar-nav-item-hover: #ece8d8;
+  --dsw-specific-tip: #f3f0e3;
+  --dsw-specific-input-major: #fdfcf6;
+  --dsw-specific-login-input: #f8f6ec;
+  --dsw-specific-bubble: #f0ede0;
+  --dsw-specific-bubble-highlight: #e5e5e0;
+  --dsw-alias-toast-bg: #2a2a28;
+  --dsw-alias-toast-label: #fffffd;
+  --dsw-alias-tooltip-bg: #2a2a28;
+  --dsw-alias-tooltip-key-bg: #3f3f3b;
+  --dsw-alias-turn-trigger-bg: #f0ede0;
+  --dsw-alias-turn-trigger-bg-hover: #e9e9e5;
+  --dsw-alias-markdown-code-block: #f0ede0;
+  --dsw-alias-markdown-code-block-banner: #eae6d6;
+  --dsw-alias-markdown-code-segment-selected: #fdfcf6;
+  --dsw-alias-markdown-code-segment-unselected: #f3f0e3;
+  --dsw-alias-markdown-inline-code: #f0ede0;
+  --dsw-alias-markdown-citation: #e9e9e5;
+  --dsw-alias-markdown-placeholder: #f3f0e3;
+  --dsw-alias-markdown-tag: #ece8d8;
+  --dsw-alias-code-diff-added: #48a13114;
+  --dsw-alias-code-diff-deleted: #ee383814;
+  --dsw-alias-file-diff-added-bg: #eef5ea;
+  --dsw-alias-file-diff-added-gutter: #f4f9f1;
+  --dsw-alias-file-diff-added-marker: #48a131;
+  --dsw-alias-file-diff-deleted-bg: #fbeceb;
+  --dsw-alias-file-diff-deleted-gutter: #fdf3f2;
+  --dsw-alias-file-diff-deleted-marker: #ee3838;
+  --dsw-alias-state-business-primary: #2a2a28;
+  --dsw-alias-state-business-tertiary: #eeeeee;
+  --dsw-alias-state-success-primary: #48a131;
+  --dsw-alias-state-success-secondary: #6fbf5a;
+  --dsw-alias-state-success-tertiary: #eaf3e6;
+  --dsw-alias-state-warn-primary: #bf8700;
+  --dsw-alias-state-warn-secondary: #d9a13a;
+  --dsw-alias-state-warn-tertiary: #fbf1dd;
+  --dsw-alias-state-warn-label: #a37100;
+  --dsw-alias-state-error-primary: #ee3838;
+  --dsw-alias-state-error-secondary: #f26b6b;
+  --dsw-alias-state-idle-primary: #c2c2bd;
+  --dsw-alias-scrollbar-bg-l1: #2a2a2830;
+  --dsw-alias-scrollbar-bg-l2: #2a2a2830;
+  --dsw-alias-scrollbar-hover-l1: #2a2a2860;
+  --dsw-alias-scrollbar-hover-l2: #2a2a2860;
+  --dsw-focus-ring-color: #7e7e7b;
+  --dsw-focus-ring-width: 2px;
+  --dsw-shadow-lv1: none;
+  --dsw-shadow-lv1-blur: none;
+  --dsw-shadow-lv2: none;
+  --dsw-shadow-lv3: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+  --dsw-elevation-stroke-color: #2a2a2847;
+  --dsw-menu-backdrop-filter: none;
+  --dsw-mask-blur: none;
+  --dsw-linear-gradient-think: linear-gradient(180deg, #fffffd 20.19%, #fffffd00 100%);
+  --dsw-linear-think-select: linear-gradient(180deg, #fafaf7 20.19%, #fafaf700 100%);
+  --dsw-radius-xs: 2px;
+  --dsw-radius-sm: 3px;
+  --dsw-radius-md: 4px;
+  --dsw-radius-lg: 5px;
+  --dsw-radius-xl: 6px;
+  --dsw-radius-panel: 8px;
+  --dsh-font-family-text-default: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsh-font-family-code-default: "Maple Mono NF CN", "Maple Mono NF", "Maple Mono", ui-monospace, "Cascadia Code", "JetBrains Mono", Consolas, Monaco, "Courier New", monospace;
+  --dsw-font-family-brand: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-h1: 700 calc(30px + var(--dsh-content-font-delta)) / calc(40px + var(--dsh-content-font-delta)) var(--dsw-font-family);
+  --dsw-font-markdown-h2: 700 calc(24px + var(--dsh-content-font-delta)) / calc(34px + var(--dsh-content-font-delta)) var(--dsw-font-family);
+  --dsw-font-markdown-h3: 700 calc(20px + var(--dsh-content-font-delta)) / calc(30px + var(--dsh-content-font-delta)) var(--dsw-font-family);
+  --dsw-font-markdown-h4: 700 calc(17px + var(--dsh-content-font-delta)) / calc(28px + var(--dsh-content-font-delta)) var(--dsw-font-family);
+  --dsw-font-markdown-h1-font-size: calc(30px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-h2-font-size: calc(24px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-h3-font-size: calc(20px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-h4-font-size: calc(17px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-h1-line-height: calc(40px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-h2-line-height: calc(34px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-h3-line-height: calc(30px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-h4-line-height: calc(28px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-base-line-height: calc(25px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-base: var(--dsh-content-font-size,14px) / calc(25px + var(--dsh-content-font-delta)) var(--dsw-font-family);
+  --dsw-font-markdown-base-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-base-strong-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-base-italic-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-base-strong-italic-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-h1-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-h2-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-h3-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-h4-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-small-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-small-italic-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-small-strong-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-small-strong-italic-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-table-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-table-head-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-code-font-family: "Maple Mono NF CN", "Maple Mono NF", "Maple Mono", ui-monospace, "Cascadia Code", "JetBrains Mono", Consolas, Monaco, "Courier New", monospace;
+  --dsw-font-markdown-code-block-font-family: "Maple Mono NF CN", "Maple Mono NF", "Maple Mono", ui-monospace, "Cascadia Code", "JetBrains Mono", Consolas, Monaco, "Courier New", monospace;
+  --dsw-font-markdown-code-block-small-font-family: "Maple Mono NF CN", "Maple Mono NF", "Maple Mono", ui-monospace, "Cascadia Code", "JetBrains Mono", Consolas, Monaco, "Courier New", monospace;
+  --ds-font-family-code: "Maple Mono NF CN", "Maple Mono NF", "Maple Mono", ui-monospace, "Cascadia Code", "JetBrains Mono", Consolas, Monaco, "Courier New", monospace;
+  --dsh-scrollbar-width: 5px;
+  --dsh-scrollbar-thumb-border: 0px;
+  --dsh-scrollbar-track-margin: 0px;
+  --shiki-foreground: #24292f;
+  --shiki-background: #f0ede0;
+  --shiki-token-constant: #005cc5;
+  --shiki-token-string: #032f62;
+  --shiki-token-comment: #6e7781;
+  --shiki-token-keyword: #d73a49;
+  --shiki-token-parameter: #953800;
+  --shiki-token-function: #6f42c1;
+  --shiki-token-string-expression: #0a3069;
+  --shiki-token-punctuation: #24292f;
+  --shiki-token-link: #032f62; }
+.panel[data-mode="dark"]  {   --dsw-static-neutral-bluish-00: #0e0e0c;
+  --dsw-static-neutral-bluish-50: #16150f;
+  --dsw-static-neutral-bluish-60: #16150f;
+  --dsw-static-neutral-bluish-75: #1d1c16;
+  --dsw-static-neutral-bluish-100: #26241c;
+  --dsw-static-neutral-bluish-150: #2b291f;
+  --dsw-static-neutral-bluish-200: #332f22;
+  --dsw-static-neutral-bluish-300: #3f3f3c;
+  --dsw-static-neutral-bluish-400: #6b6b67;
+  --dsw-static-neutral-bluish-500: #85858a;
+  --dsw-static-neutral-bluish-600: #9e9e9b;
+  --dsw-static-neutral-bluish-700: #b1b1ad;
+  --dsw-static-neutral-bluish-750: #c2c2bd;
+  --dsw-static-neutral-bluish-800: #262624;
+  --dsw-static-neutral-bluish-850: #1e1e1c;
+  --dsw-static-neutral-bluish-875: #171715;
+  --dsw-static-neutral-bluish-900: #141412;
+  --dsw-static-neutral-bluish-950: #0e0e0c;
+  --dsw-static-neutral-bluish-1000: #dddddb;
+  --dsw-static-neutral-00: #ffffff;
+  --dsw-static-neutral-50: #fafafa;
+  --dsw-static-neutral-100: #f5f5f5;
+  --dsw-static-neutral-150: #ededed;
+  --dsw-static-neutral-200: #e5e5e5;
+  --dsw-static-neutral-250: #dcdcdc;
+  --dsw-static-neutral-300: #d4d4d2;
+  --dsw-static-neutral-400: #a4a4a2;
+  --dsw-static-neutral-500: #83837f;
+  --dsw-static-neutral-550: #6b6b67;
+  --dsw-static-neutral-600: #565651;
+  --dsw-static-neutral-700: #3c3c3a;
+  --dsw-static-neutral-800: #292927;
+  --dsw-static-neutral-850: #212120;
+  --dsw-static-neutral-900: #0f0f0e;
+  --dsw-static-neutral-1000: #000000;
+  --dsw-static-deepseek-50: #1e1d17;
+  --dsw-static-deepseek-100: #242422;
+  --dsw-static-deepseek-200: #2b2b29;
+  --dsw-static-deepseek-300: #3b3b38;
+  --dsw-static-deepseek-400: #dddddb;
+  --dsw-static-deepseek-450: #dddddb;
+  --dsw-static-deepseek-500: #dddddb;
+  --dsw-static-deepseek-600: #b3b3af;
+  --dsw-static-deepseek-700-delete: #c2c2bd;
+  --dsw-static-deepseek-800: #1d1c16;
+  --dsw-static-deepseek-900: #16150f;
+  --dsw-static-blue-50: #171715;
+  --dsw-static-blue-50p: #1e1e1c;
+  --dsw-static-blue-75: #1e1e1c;
+  --dsw-static-blue-100: #262624;
+  --dsw-static-blue-300: #3f3f3c;
+  --dsw-static-blue-400: #6b6b67;
+  --dsw-static-blue-450: #7e7e7b;
+  --dsw-static-blue-500: #9e9e9b;
+  --dsw-static-blue-600: #b1b1ad;
+  --dsw-static-blue-800: #c2c2bd;
+  --dsw-static-blue-900: #dddddb;
+  --dsw-static-blue-950: #141412;
+  --dsw-static-green-100: #1b241a;
+  --dsw-static-green-400: #6fbf5a;
+  --dsw-static-green-500: #6fbf5a;
+  --dsw-static-green-500-a08: #6fbf5a14;
+  --dsw-static-green-500-a12: #6fbf5a1f;
+  --dsw-static-green-900: #233c2c;
+  --dsw-static-red-50: #241717;
+  --dsw-static-red-100: #2a1a1a;
+  --dsw-static-red-400: #f26b6b;
+  --dsw-static-red-400-a12: #f26b6b1f;
+  --dsw-static-red-500: #f04a4a;
+  --dsw-static-red-600: #f26b6b;
+  --dsw-static-red-600-a08: #f26b6b14;
+  --dsw-static-red-900: #570c0c;
+  --dsw-static-amber-100: #2a2213;
+  --dsw-static-amber-400: #d9a13a;
+  --dsw-static-amber-500: #d9a13a;
+  --dsw-static-amber-600: #d9a13a;
+  --dsw-static-amber-900: #27241f;
+  --dsw-alias-label-primary: #dddddb;
+  --dsw-alias-label-primary-bluish: #dddddb;
+  --dsw-alias-label-primary-dimmed: #c9c9c5;
+  --dsw-alias-label-primary-foreground: #0e0e0c;
+  --dsw-alias-label-primary-inverted: #1e1e1c;
+  --dsw-alias-label-secondary: #9e9e9b;
+  --dsw-alias-label-tertiary: #6f6f6b;
+  --dsw-alias-label-caption: #7a7a76;
+  --dsw-alias-label-dimmed: #4c4c48;
+  --dsw-alias-label-document-preview: #c2c2bd;
+  --dsw-alias-label-shimmer: #ffffff73;
+  --dsw-alias-label-deep-diving: #dddddb;
+  --dsw-alias-label-deep-diving-shimmer: #6b6b67;
+  --dsw-alias-link: #dddddb;
+  --dsw-alias-menu-icon: #c9c9c5;
+  --dsw-alias-bg-base: #0e0e0c;
+  --dsw-alias-bg-layer-1: #16150f;
+  --dsw-alias-bg-layer-2: #1d1c16;
+  --dsw-alias-bg-layer-3: #24231b;
+  --dsw-alias-bg-overlay: #24231b;
+  --dsw-alias-bg-module-platform: #16150f;
+  --dsw-alias-bg-multi-select: #1d1c16;
+  --dsw-alias-bg-document-preview: #16150f;
+  --dsw-alias-bg-document-selection: #adadacc3;
+  --dsw-alias-bg-skeleton: #dddddb14;
+  --dsw-alias-bg-mask-1: #00000099;
+  --dsw-alias-bg-mask-2: #00000033;
+  --dsw-alias-bg-mask-3: #00000080;
+  --dsw-alias-bg-mask-drop: #141412b3;
+  --dsw-alias-bg-mask-photo: #000000e0;
+  --dsw-alias-border-l1: #dddddb1f;
+  --dsw-alias-border-l2: #dddddb2e;
+  --dsw-alias-border-l2-darkmode-thin: #dddddb1f;
+  --dsw-alias-border-l3: #dddddb3d;
+  --dsw-alias-border-l4: #dddddb52;
+  --dsw-alias-border-inverted: #dddddb0a;
+  --dsw-alias-border-inverted2: #dddddb14;
+  --dsw-alias-interactive-bg-hover: #dddddb17;
+  --dsw-alias-interactive-bg-active: #dddddb26;
+  --dsw-alias-interactive-bg-hover-accent: #dddddb3d;
+  --dsw-alias-interactive-bg-hover-danger: #ee383826;
+  --dsw-alias-interactive-bg-hover-solid: #24231b;
+  --dsw-alias-brand-primary: #dddddb;
+  --dsw-alias-brand-primary-invert: #dddddb;
+  --dsw-alias-brand-primary-new-colorprimary-new-color: #dddddb;
+  --dsw-alias-brand-text: #dddddb;
+  --dsw-alias-button-primary-fill: #dddddb;
+  --dsw-alias-button-primary-hover: #f2f2ef;
+  --dsw-alias-button-primary-dimmed: #24231b;
+  --dsw-alias-button-contrast-fill: #dddddb;
+  --dsw-alias-button-info-fill: #dddddb;
+  --dsw-alias-button-info-hover: #f2f2ef;
+  --dsw-alias-button-elevated-fill: #1d1c16;
+  --dsw-alias-button-floating-fill: #24231b;
+  --dsw-alias-button-floating-hover: #1d1c16;
+  --dsw-alias-button-ghost-active-fill: #24231b;
+  --dsw-alias-button-ghost-active-hover: #4d4d49;
+  --dsw-alias-button-ghost-active-border: #7e7e7b;
+  --dsw-alias-button-tool-bar-fill: #2a2a2880;
+  --dsw-alias-button-tool-bar-fill-invisible: #1f1f1f5c;
+  --dsw-alias-button-tool-bar-hover: #2a2a2899;
+  --dsw-alias-switch-thumb: #a8a8a4;
+  --dsw-menu-surface-fill: #1b1b19fa;
+  --dsw-alias-menu-group-header-fill: #1b1b19f0;
+  --dsw-specific-menu: #1b1b19fa;
+  --dsw-specific-selector: #1d1c16;
+  --dsw-specific-sidebar-fill: #131210;
+  --dsw-specific-sidebar-nav-item-active: #1d1c16;
+  --dsw-specific-sidebar-nav-item-active-accent: #24231b;
+  --dsw-specific-sidebar-nav-item-hover: #16150f;
+  --dsw-specific-tip: #1d1c16;
+  --dsw-specific-input-major: #1d1c16;
+  --dsw-specific-login-input: #1d1c16;
+  --dsw-specific-bubble: #1d1c16;
+  --dsw-specific-bubble-highlight: #2a2a26;
+  --dsw-alias-toast-bg: #dddddb;
+  --dsw-alias-toast-label: #0e0e0c;
+  --dsw-alias-tooltip-bg: #dddddb;
+  --dsw-alias-tooltip-key-bg: #f2f2ef;
+  --dsw-alias-turn-trigger-bg: #24231b;
+  --dsw-alias-turn-trigger-bg-hover: #323230;
+  --dsw-alias-markdown-code-block: #1e1d17;
+  --dsw-alias-markdown-code-block-banner: #232219;
+  --dsw-alias-markdown-code-segment-selected: #24231b;
+  --dsw-alias-markdown-code-segment-unselected: #16150f;
+  --dsw-alias-markdown-inline-code: #1e1d17;
+  --dsw-alias-markdown-citation: #24231b;
+  --dsw-alias-markdown-placeholder: #1d1c16;
+  --dsw-alias-markdown-tag: #1d1c16;
+  --dsw-alias-code-diff-added: #6fbf5a1f;
+  --dsw-alias-code-diff-deleted: #f26b6b1f;
+  --dsw-alias-file-diff-added-bg: #182117;
+  --dsw-alias-file-diff-added-gutter: #1e2a1c;
+  --dsw-alias-file-diff-added-marker: #6fbf5a;
+  --dsw-alias-file-diff-deleted-bg: #251717;
+  --dsw-alias-file-diff-deleted-gutter: #2e1c1c;
+  --dsw-alias-file-diff-deleted-marker: #f26b6b;
+  --dsw-alias-state-business-primary: #dddddb;
+  --dsw-alias-state-business-tertiary: #24231b;
+  --dsw-alias-state-success-primary: #6fbf5a;
+  --dsw-alias-state-success-secondary: #6fbf5a;
+  --dsw-alias-state-success-tertiary: #1b241a;
+  --dsw-alias-state-warn-primary: #d9a13a;
+  --dsw-alias-state-warn-secondary: #d9a13a;
+  --dsw-alias-state-warn-tertiary: #2a2213;
+  --dsw-alias-state-warn-label: #d9a13a;
+  --dsw-alias-state-error-primary: #f26b6b;
+  --dsw-alias-state-error-secondary: #f26b6b;
+  --dsw-alias-state-idle-primary: #4d4d49;
+  --dsw-alias-scrollbar-bg-l1: #dddddb30;
+  --dsw-alias-scrollbar-bg-l2: #dddddb30;
+  --dsw-alias-scrollbar-hover-l1: #dddddb60;
+  --dsw-alias-scrollbar-hover-l2: #dddddb60;
+  --dsw-focus-ring-color: #9e9e9b;
+  --dsw-focus-ring-width: 2px;
+  --dsw-shadow-lv1: none;
+  --dsw-shadow-lv1-blur: none;
+  --dsw-shadow-lv2: none;
+  --dsw-shadow-lv3: 0 4px 6px -1px #00000066, 0 2px 4px -2px #00000059;
+  --dsw-elevation-stroke-color: #dddddb52;
+  --dsw-menu-backdrop-filter: none;
+  --dsw-mask-blur: none;
+  --dsw-linear-gradient-think: linear-gradient(180deg, #0e0e0c 20.19%, #0e0e0c00 100%);
+  --dsw-linear-think-select: linear-gradient(180deg, #171715 20.19%, #17171500 100%);
+  --dsw-radius-xs: 2px;
+  --dsw-radius-sm: 3px;
+  --dsw-radius-md: 4px;
+  --dsw-radius-lg: 5px;
+  --dsw-radius-xl: 6px;
+  --dsw-radius-panel: 8px;
+  --dsh-font-family-text-default: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsh-font-family-code-default: "Maple Mono NF CN", "Maple Mono NF", "Maple Mono", ui-monospace, "Cascadia Code", "JetBrains Mono", Consolas, Monaco, "Courier New", monospace;
+  --dsw-font-family-brand: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-h1: 700 calc(30px + var(--dsh-content-font-delta)) / calc(40px + var(--dsh-content-font-delta)) var(--dsw-font-family);
+  --dsw-font-markdown-h2: 700 calc(24px + var(--dsh-content-font-delta)) / calc(34px + var(--dsh-content-font-delta)) var(--dsw-font-family);
+  --dsw-font-markdown-h3: 700 calc(20px + var(--dsh-content-font-delta)) / calc(30px + var(--dsh-content-font-delta)) var(--dsw-font-family);
+  --dsw-font-markdown-h4: 700 calc(17px + var(--dsh-content-font-delta)) / calc(28px + var(--dsh-content-font-delta)) var(--dsw-font-family);
+  --dsw-font-markdown-h1-font-size: calc(30px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-h2-font-size: calc(24px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-h3-font-size: calc(20px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-h4-font-size: calc(17px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-h1-line-height: calc(40px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-h2-line-height: calc(34px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-h3-line-height: calc(30px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-h4-line-height: calc(28px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-base-line-height: calc(25px + var(--dsh-content-font-delta));
+  --dsw-font-markdown-base: var(--dsh-content-font-size,14px) / calc(25px + var(--dsh-content-font-delta)) var(--dsw-font-family);
+  --dsw-font-markdown-base-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-base-strong-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-base-italic-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-base-strong-italic-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-h1-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-h2-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-h3-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-h4-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-small-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-small-italic-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-small-strong-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-small-strong-italic-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-table-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-table-head-font-family: "Noto Serif SC", "Noto Serif", "Source Han Serif SC", "Source Han Serif", "Songti SC", STSong, SimSun, Georgia, "Times New Roman", serif;
+  --dsw-font-markdown-code-font-family: "Maple Mono NF CN", "Maple Mono NF", "Maple Mono", ui-monospace, "Cascadia Code", "JetBrains Mono", Consolas, Monaco, "Courier New", monospace;
+  --dsw-font-markdown-code-block-font-family: "Maple Mono NF CN", "Maple Mono NF", "Maple Mono", ui-monospace, "Cascadia Code", "JetBrains Mono", Consolas, Monaco, "Courier New", monospace;
+  --dsw-font-markdown-code-block-small-font-family: "Maple Mono NF CN", "Maple Mono NF", "Maple Mono", ui-monospace, "Cascadia Code", "JetBrains Mono", Consolas, Monaco, "Courier New", monospace;
+  --ds-font-family-code: "Maple Mono NF CN", "Maple Mono NF", "Maple Mono", ui-monospace, "Cascadia Code", "JetBrains Mono", Consolas, Monaco, "Courier New", monospace;
+  --dsh-scrollbar-width: 5px;
+  --dsh-scrollbar-thumb-border: 0px;
+  --dsh-scrollbar-track-margin: 0px;
+  --shiki-foreground: #d4d4d4;
+  --shiki-background: #1e1d17;
+  --shiki-token-constant: #b5cea8;
+  --shiki-token-string: #ce9178;
+  --shiki-token-comment: #6a9955;
+  --shiki-token-keyword: #569cd6;
+  --shiki-token-parameter: #9cdcfe;
+  --shiki-token-function: #dcdcaa;
+  --shiki-token-string-expression: #ce9178;
+  --shiki-token-punctuation: #d4d4d4;
+  --shiki-token-link: #4ec9b0; }
+.panel-head {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 14px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+  background: var(--dsw-alias-bg-base);
+  color: var(--dsw-alias-label-secondary);
+  border-bottom: 1px solid var(--dsw-alias-border-l2);
+}
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--dsw-alias-label-primary); }
+.shell {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  grid-template-rows: 1fr auto;
+  height: 640px;
+  background: var(--dsw-alias-bg-base);
+  color: var(--dsw-alias-label-primary);
+  font-size: 14px;
+  position: relative;
+}
+.rail {
+  grid-row: 1 / span 2;
+  background: var(--dsw-specific-sidebar-fill);
+  border-right: 1px solid var(--dsw-alias-border-l1);
+  padding: 14px 12px;
+  display: flex; flex-direction: column; gap: 14px;
+  color: var(--dsw-alias-label-secondary);
+}
+.brand { font-family: "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"; font-size: 16px; color: var(--dsw-alias-label-primary); }
+.rail nav { display: flex; flex-direction: column; gap: 2px; }
+.nav-item {
+  padding: 7px 9px; border-radius: var(--dsw-radius-sm);
+  font-size: 13px; color: var(--dsw-alias-label-secondary);
+  text-decoration: none;
+}
+.nav-item.is-active { background: var(--dsw-specific-sidebar-nav-item-active); color: var(--dsw-alias-label-primary); }
+.rail-foot { margin-top: auto; font-size: 11px; color: var(--dsw-alias-label-tertiary); }
+.convo { padding: 22px 26px; overflow: auto; }
+.turn.user { display: flex; justify-content: flex-end; margin-bottom: 20px; }
+.bubble {
+  background: transparent;
+  border: 1px solid var(--dsw-alias-border-l2);
+  border-left: 3px solid var(--dsw-alias-label-primary);
+  border-radius: 2px;
+  padding: 10px 14px; max-width: 78%;
+  line-height: 1.6;
+}
+.md { font-family: "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"; }
+.md h1 { font-size: 30px; margin: 0 0 18px; font-weight: 700; }
+.md h2 { font-size: 24px; margin: 30px 0 14px; font-weight: 700; }
+.md p { margin: 14px 0; line-height: 1.75; }
+.md code {
+  font-family: "\"Maple Mono NF CN\", \"Maple Mono NF\", \"Maple Mono\", ui-monospace, \"Cascadia Code\", \"JetBrains Mono\", Consolas, Monaco, \"Courier New\", monospace";
+  background: var(--dsw-alias-markdown-inline-code);
+  border-radius: 0.3em; padding: 0.25em 0.5em; font-size: 0.85em;
+}
+.md a { color: var(--dsw-alias-label-primary); text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 0.05em; text-underline-offset: 0.15em; }
+.md a:hover { text-decoration-color: currentColor; }
+.md ul { padding-left: 1.2em; margin: 14px 0; }
+.md li { line-height: 1.75; margin: 4px 0; }
+.md li::marker { color: var(--dsw-alias-label-secondary); }
+.md hr { height: 0; border: 0; border-bottom: 1px dashed var(--dsw-alias-label-secondary); margin: 24px 0; }
+.md blockquote { margin: 16px 0; border-left: 4px solid var(--dsw-alias-border-l4); padding-left: 1em; color: var(--dsw-alias-label-secondary); font-style: normal; }
+.md table { border-collapse: collapse; width: 100%; border-top: 3px solid var(--dsw-alias-label-primary); border-bottom: 3px solid var(--dsw-alias-label-primary); font-size: 13px; }
+.md thead th { border-bottom: 2px solid var(--dsw-alias-label-primary); text-align: left; }
+.md :where(th, td) { padding: 5px 10px; }
+.md-code-block {
+  margin: 18px 0; border-radius: var(--dsw-radius-sm); overflow: hidden;
+  background: var(--dsw-alias-markdown-code-block);
+}
+.code-head {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 8px 14px; font-size: 11.5px;
+  color: var(--dsw-alias-label-secondary);
+  background: var(--dsw-alias-markdown-code-block-banner);
+  font-family: "\"Maple Mono NF CN\", \"Maple Mono NF\", \"Maple Mono\", ui-monospace, \"Cascadia Code\", \"JetBrains Mono\", Consolas, Monaco, \"Courier New\", monospace";
+}
+.md-code-block pre {
+  margin: 0; padding: 14px; overflow: auto;
+  font-family: "\"Maple Mono NF CN\", \"Maple Mono NF\", \"Maple Mono\", ui-monospace, \"Cascadia Code\", \"JetBrains Mono\", Consolas, Monaco, \"Courier New\", monospace";
+  font-size: 11.5px; line-height: 1.55;
+  color: var(--shiki-foreground);
+}
+.md-code-block pre code { background: none; padding: 0; font-size: inherit; border-radius: 0; }
+.c-comment { color: var(--shiki-token-comment); }
+.c-keyword { color: var(--shiki-token-keyword); }
+.c-string { color: var(--shiki-token-string); }
+.c-func { color: var(--shiki-token-function); }
+.status-row { display: flex; gap: 8px; margin-top: 18px; }
+.pill { font-size: 11.5px; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--dsw-alias-border-l3); }
+.pill.tip { color: var(--dsw-alias-state-success-primary); border-color: var(--dsw-alias-state-success-primary); }
+.pill.warn { color: var(--dsw-alias-state-warn-primary); border-color: var(--dsw-alias-state-warn-primary); }
+.pill.danger { color: var(--dsw-alias-state-error-primary); border-color: var(--dsw-alias-state-error-primary); }
+.composer-wrap { padding: 0 18px 16px; }
+.composer {
+  display: flex; align-items: center; justify-content: space-between;
+  border: 1px solid var(--dsw-alias-border-l3);
+  background: var(--dsw-specific-input-major);
+  border-radius: var(--dsw-radius-lg);
+  padding: 11px 12px 11px 14px; font-size: 13.5px;
+  color: var(--dsw-alias-label-tertiary);
+}
+.send {
+  width: 24px; height: 24px; display: grid; place-items: center;
+  border-radius: 50%; background: var(--dsw-alias-button-primary-fill);
+  color: var(--dsw-alias-label-primary-foreground); font-size: 13px;
+}
+.note { padding: 0 32px 36px; color: #6b6b67; font-size: 12.5px; line-height: 1.7; max-width: 78ch; }
+.note code { font-family: "\"Maple Mono NF CN\", \"Maple Mono NF\", \"Maple Mono\", ui-monospace, \"Cascadia Code\", \"JetBrains Mono\", Consolas, Monaco, \"Courier New\", monospace"; background: #0000000f; padding: 1px 5px; border-radius: 3px; }
+/* ── ThoughtLite skin: signature rules ─────────────────────────────
+   Only decoration lives here. Every colour above is a token override, so the
+   rules below survive Appearance changes and cannot fight user font settings. */
+
+/* Upstream paints selections in a translucent grey in BOTH modes. */
+::selection {
+  background-color: #adadacc3;
+}
+
+/* The skin lives on the reading surface: the markdown root is the one stable
+   hook DSH exposes (CSS-module class _markdown_<hash>). */
+.md {
+  text-wrap: pretty;
+}
+
+/* h1/h2 are the only headings that carry weight in upstream: a rule under. */
+.md h1 {
+  border-bottom: 4px solid currentColor;
+  padding-bottom: 0.15em;
+}
+.md h2 {
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 0.1em;
+}
+
+/* Links inherit ink and carry a resting underline; hovering darkens it to the
+   full ink (upstream reveals it on hover, but a GUI needs link affordance that
+   survives a glance — see README §偏差). */
+.md a {
+  color: var(--dsw-alias-label-primary);
+  font-weight: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 32%, transparent);
+  text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.15em;
+  transition: text-decoration-color 0.15s ease-in-out;
+}
+.md a:hover,
+.md a:focus {
+  text-decoration-color: currentColor !important;
+  text-decoration-style: solid;
+}
+
+/* Horizontal rule: hairline dashed in the divider grey. */
+.md hr {
+  height: 0;
+  background: none;
+  border: 0;
+  border-bottom: 1px dashed var(--dsw-alias-label-secondary);
+  margin: 28px 0;
+}
+
+/* Blockquote: a 4px --shadow-color bar, no fill, no italics. */
+.md blockquote {
+  border-left: 4px solid var(--dsw-alias-border-l4);
+  padding-left: 1em;
+  color: var(--dsw-alias-label-secondary);
+  font-style: normal;
+}
+
+/* Lists: upstream's 1.2em indent, muted markers. */
+.md :where(ul, ol) {
+  padding-left: 1.2em;
+}
+.md li::marker {
+  color: var(--dsw-alias-label-secondary);
+}
+
+/* Inline code: the block fill, 0.3em corners, .25em/.5em padding. */
+.md :not(pre) > code {
+  background-color: var(--dsw-alias-markdown-inline-code);
+  border-radius: 0.3em;
+  padding: 0.25em 0.5em;
+  font-size: 0.85em !important;
+  font-weight: inherit;
+}
+
+/* Fenced blocks: upstream's 0.3em corners and a hairline, not a floating card. */
+.md pre {
+  border-radius: 0.3em;
+}
+.md .md-code-block {
+  border: 1px solid var(--dsw-alias-border-l2);
+  border-radius: var(--dsw-radius-sm);
+}
+
+/* Booktabs tables: 3px rules top and bottom, 2px under the header. */
+.md table {
+  border-collapse: collapse;
+  border-top: 3px solid var(--dsw-alias-label-primary);
+  border-bottom: 3px solid var(--dsw-alias-label-primary);
+}
+.md thead th {
+  border-bottom: 2px solid var(--dsw-alias-label-primary) !important;
+}
+.md :where(th, td) {
+  padding: 5px 10px;
+}
+
+/* Highlight: a wavy underline instead of a marker fill. */
+.md mark {
+  color: inherit;
+  background: none;
+  text-decoration: underline wavy 0.05em;
+  text-underline-offset: 0.1em;
+}
+
+/* Upstream body metrics: 1.75 leading on the reading surface. */
+.md :where(p, li, blockquote) {
+  line-height: 1.75;
+}
+
+/* Headings get the upstream breathing room (the harness uses fixed margins). */
+.md h1 {
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+.md h2 {
+  margin-top: 30px;
+  margin-bottom: 14px;
+}
+.md h3 {
+  margin-top: 26px;
+  margin-bottom: 10px;
+}
+
+/* ── structural signature ─────────────────────────────────────────────
+   These three rules are what make the app stop looking like a chat client.
+   Hooks are the CSS-module local-name suffixes DSH ships (a leading hash plus
+   the local name), so an attribute-contains selector stays stable across
+   rebuilds; every hook used here is declared in fixtures/dsh-css-modules.json
+   and checked by test/verify.mjs. */
+
+/* Sidebar masthead: hairline under the logo row, like a blog header rule. */
+[class*="_logoRow"] {
+  border-bottom: 1px solid var(--dsw-alias-border-l2);
+  padding-bottom: 10px;
+}
+
+/* Sidebar entries read as a ruled list, not rounded pills. */
+[class*="_panelRow"] {
+  border-radius: 2px;
+}
+[class*="_panelRow"] + [class*="_panelRow"] {
+  border-top: 1px solid var(--dsw-alias-border-l1);
+}
+
+/* The user's own turn: no chat bubble. A flat block with an ink rail on the
+   left, which is how an editorial page marks a quotation. */
+[class*="_bubble"] {
+  background: transparent !important;
+  border: 1px solid var(--dsw-alias-border-l2);
+  border-left: 3px solid var(--dsw-alias-label-primary);
+  border-radius: 2px !important;
+  padding: 10px 14px;
+}
+
+/* Composer: a form field, not a floating card. */
+[class*="_composerStack"] [class*="_input"] {
+  border-radius: 2px !important;
+}
+
+</style>
+</head>
+<body>
+  <div class="page-head">
+    <h1>ThoughtLite · DSH 皮肤预览</h1>
+    <p>左：浅色 / 右：深色 &nbsp;·&nbsp; 上游：astro-theme-thought-lite</p>
+  </div>
+  <div class="panels">
+    
+    <section class="panel" data-mode="light">
+      <header class="panel-head">
+        <span class="dot"></span>
+        <span>Light</span>
+      </header>
+      <div class="shell" style="--tok-bg: #fdfcf6;">
+        <aside class="rail">
+          <div class="brand">ThoughtLite</div>
+          <nav>
+            <a class="nav-item is-active">新对话</a>
+            <a class="nav-item">皮肤与主题</a>
+            <a class="nav-item">插件市场</a>
+            <a class="nav-item">设置</a>
+          </nav>
+          <div class="rail-foot">5px 墨色滚动条</div>
+        </aside>
+        <main class="convo">
+          <div class="turn user"><div class="bubble">把这套皮肤应用到我当前的会话里，顺便展示一下 Markdown 的排版。</div></div>
+          <article class="md">
+            <h1>ThoughtLite 排版</h1>
+            <p>正文用衬线体，行高 <code>1.75</code>，纸面是奶油色 <code>#fdfcf6</code>，墨色是 <code>#2a2a28</code>。链接不靠颜色区分，靠<a href="#">静息下划线</a>。</p>
+            <h2>为什么是这套结构</h2>
+            <blockquote>上游只有一个强调色：文字本身的颜色。所以整套皮肤是单色的，语义状态色保留 GitHub Alert 的四种色相。</blockquote>
+            <ul>
+              <li>heading 用 4px / 2px 的横线收口</li>
+              <li>引用是 4px 的 <code>--shadow-color</code> 竖条</li>
+              <li>表格用 booktabs 式三条横线</li>
+            </ul>
+            <hr>
+            <table>
+              <thead><tr><th>令牌</th><th>Light</th><th>Dark</th></tr></thead>
+              <tbody>
+                <tr><td>canvas</td><td>#fdfcf6</td><td>#0e0e0c</td></tr>
+                <tr><td>ink</td><td>#2a2a28</td><td>#dddddb</td></tr>
+                <tr><td>block</td><td>#f0ede0</td><td>#1e1d17</td></tr>
+              </tbody>
+            </table>
+            <div class="md-code-block">
+              <div class="code-head"><span>tokens.ts</span><span class="copy">复制</span></div>
+              <pre><code><span class="c-comment">// 令牌覆盖层</span>
+<span class="c-keyword">export const</span> skin = {
+  canvas: <span class="c-string">"#fffffd"</span>,
+  ink: <span class="c-string">"#2a2a28"</span>,
+  <span class="c-func">overrideTokens</span>(id, tokens)
+}</code></pre>
+            </div>
+            <p class="status-row">
+              <span class="pill tip">tip</span>
+              <span class="pill warn">warning</span>
+              <span class="pill danger">caution</span>
+            </p>
+          </article>
+        </main>
+        <div class="composer-wrap">
+          <div class="composer">
+            <span class="ph">给 DeepSeek Harness 发消息…</span>
+            <span class="send">↑</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="panel" data-mode="dark">
+      <header class="panel-head">
+        <span class="dot"></span>
+        <span>Dark</span>
+      </header>
+      <div class="shell" style="--tok-bg: #0e0e0c;">
+        <aside class="rail">
+          <div class="brand">ThoughtLite</div>
+          <nav>
+            <a class="nav-item is-active">新对话</a>
+            <a class="nav-item">皮肤与主题</a>
+            <a class="nav-item">插件市场</a>
+            <a class="nav-item">设置</a>
+          </nav>
+          <div class="rail-foot">5px 墨色滚动条</div>
+        </aside>
+        <main class="convo">
+          <div class="turn user"><div class="bubble">把这套皮肤应用到我当前的会话里，顺便展示一下 Markdown 的排版。</div></div>
+          <article class="md">
+            <h1>ThoughtLite 排版</h1>
+            <p>正文用衬线体，行高 <code>1.75</code>，纸面是奶油色 <code>#fdfcf6</code>，墨色是 <code>#2a2a28</code>。链接不靠颜色区分，靠<a href="#">静息下划线</a>。</p>
+            <h2>为什么是这套结构</h2>
+            <blockquote>上游只有一个强调色：文字本身的颜色。所以整套皮肤是单色的，语义状态色保留 GitHub Alert 的四种色相。</blockquote>
+            <ul>
+              <li>heading 用 4px / 2px 的横线收口</li>
+              <li>引用是 4px 的 <code>--shadow-color</code> 竖条</li>
+              <li>表格用 booktabs 式三条横线</li>
+            </ul>
+            <hr>
+            <table>
+              <thead><tr><th>令牌</th><th>Light</th><th>Dark</th></tr></thead>
+              <tbody>
+                <tr><td>canvas</td><td>#fdfcf6</td><td>#0e0e0c</td></tr>
+                <tr><td>ink</td><td>#2a2a28</td><td>#dddddb</td></tr>
+                <tr><td>block</td><td>#f0ede0</td><td>#1e1d17</td></tr>
+              </tbody>
+            </table>
+            <div class="md-code-block">
+              <div class="code-head"><span>tokens.ts</span><span class="copy">复制</span></div>
+              <pre><code><span class="c-comment">// 令牌覆盖层</span>
+<span class="c-keyword">export const</span> skin = {
+  canvas: <span class="c-string">"#fffffd"</span>,
+  ink: <span class="c-string">"#2a2a28"</span>,
+  <span class="c-func">overrideTokens</span>(id, tokens)
+}</code></pre>
+            </div>
+            <p class="status-row">
+              <span class="pill tip">tip</span>
+              <span class="pill warn">warning</span>
+              <span class="pill danger">caution</span>
+            </p>
+          </article>
+        </main>
+        <div class="composer-wrap">
+          <div class="composer">
+            <span class="ph">给 DeepSeek Harness 发消息…</span>
+            <span class="send">↑</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <p class="note">
+    这张预览页与插件共用同一份令牌表（<code>src/skin.mjs</code> → <code>node src/build.mjs</code>），
+    所以页面上看到的每一个颜色都是 <code>ctx.theme.overrideTokens</code> 实际下发的值。
+    唯一例外是 <code>theme-color</code>、原生窗口外框等由宿主绘制的部分。
+  </p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+name: verify
+
+# The package ships no build step: lib/client.js is a committed, hand-written
+# module-loader bundle. So CI only has to prove the artifacts are in sync with
+# src/skin.mjs and that the override layer is well-formed and legible.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Rebuild artifacts from the single source of truth
+        run: node src/build.mjs
+      - name: Fail when committed artifacts differ from a fresh build
+        run: git diff --exit-code
+      - name: Verify the plugin contract, token coverage and contrast
+        run: node test/verify.mjs

@@ -1,0 +1,1031 @@
+{
+  "theme": "ThoughtLite",
+  "upstream": "https://github.com/tuyuritio/astro-theme-thought-lite",
+  "count": 256,
+  "tokens": {
+    "--dsw-static-neutral-bluish-00": {
+      "light": "#fdfcf6",
+      "dark": "#0e0e0c"
+    },
+    "--dsw-static-neutral-bluish-50": {
+      "light": "#f8f6ec",
+      "dark": "#16150f"
+    },
+    "--dsw-static-neutral-bluish-60": {
+      "light": "#f3f0e3",
+      "dark": "#16150f"
+    },
+    "--dsw-static-neutral-bluish-75": {
+      "light": "#ece8d8",
+      "dark": "#1d1c16"
+    },
+    "--dsw-static-neutral-bluish-100": {
+      "light": "#ece8da",
+      "dark": "#26241c"
+    },
+    "--dsw-static-neutral-bluish-150": {
+      "light": "#e4dfcf",
+      "dark": "#2b291f"
+    },
+    "--dsw-static-neutral-bluish-200": {
+      "light": "#d8d2bf",
+      "dark": "#332f22"
+    },
+    "--dsw-static-neutral-bluish-300": {
+      "light": "#c2c2bd",
+      "dark": "#3f3f3c"
+    },
+    "--dsw-static-neutral-bluish-400": {
+      "light": "#a2a29e",
+      "dark": "#6b6b67"
+    },
+    "--dsw-static-neutral-bluish-500": {
+      "light": "#8c8c88",
+      "dark": "#85858a"
+    },
+    "--dsw-static-neutral-bluish-600": {
+      "light": "#7e7e7b",
+      "dark": "#9e9e9b"
+    },
+    "--dsw-static-neutral-bluish-700": {
+      "light": "#64645f",
+      "dark": "#b1b1ad"
+    },
+    "--dsw-static-neutral-bluish-750": {
+      "light": "#4d4d49",
+      "dark": "#c2c2bd"
+    },
+    "--dsw-static-neutral-bluish-800": {
+      "light": "#3b3b38",
+      "dark": "#262624"
+    },
+    "--dsw-static-neutral-bluish-850": {
+      "light": "#2e2e2b",
+      "dark": "#1e1e1c"
+    },
+    "--dsw-static-neutral-bluish-875": {
+      "light": "#262524",
+      "dark": "#171715"
+    },
+    "--dsw-static-neutral-bluish-900": {
+      "light": "#1e1e1e",
+      "dark": "#141412"
+    },
+    "--dsw-static-neutral-bluish-950": {
+      "light": "#141413",
+      "dark": "#0e0e0c"
+    },
+    "--dsw-static-neutral-bluish-1000": {
+      "light": "#0e0e0c",
+      "dark": "#dddddb"
+    },
+    "--dsw-static-neutral-00": {
+      "light": "#ffffff",
+      "dark": "#ffffff"
+    },
+    "--dsw-static-neutral-50": {
+      "light": "#fafafa",
+      "dark": "#fafafa"
+    },
+    "--dsw-static-neutral-100": {
+      "light": "#f5f5f5",
+      "dark": "#f5f5f5"
+    },
+    "--dsw-static-neutral-150": {
+      "light": "#ededed",
+      "dark": "#ededed"
+    },
+    "--dsw-static-neutral-200": {
+      "light": "#e5e5e5",
+      "dark": "#e5e5e5"
+    },
+    "--dsw-static-neutral-250": {
+      "light": "#dcdcdc",
+      "dark": "#dcdcdc"
+    },
+    "--dsw-static-neutral-300": {
+      "light": "#d4d4d2",
+      "dark": "#d4d4d2"
+    },
+    "--dsw-static-neutral-400": {
+      "light": "#a4a4a2",
+      "dark": "#a4a4a2"
+    },
+    "--dsw-static-neutral-500": {
+      "light": "#83837f",
+      "dark": "#83837f"
+    },
+    "--dsw-static-neutral-550": {
+      "light": "#6b6b67",
+      "dark": "#6b6b67"
+    },
+    "--dsw-static-neutral-600": {
+      "light": "#565651",
+      "dark": "#565651"
+    },
+    "--dsw-static-neutral-700": {
+      "light": "#3c3c3a",
+      "dark": "#3c3c3a"
+    },
+    "--dsw-static-neutral-800": {
+      "light": "#292927",
+      "dark": "#292927"
+    },
+    "--dsw-static-neutral-850": {
+      "light": "#212120",
+      "dark": "#212120"
+    },
+    "--dsw-static-neutral-900": {
+      "light": "#0f0f0e",
+      "dark": "#0f0f0e"
+    },
+    "--dsw-static-neutral-1000": {
+      "light": "#000000",
+      "dark": "#000000"
+    },
+    "--dsw-static-deepseek-50": {
+      "light": "#f0ede0",
+      "dark": "#1e1d17"
+    },
+    "--dsw-static-deepseek-100": {
+      "light": "#e6e6e2",
+      "dark": "#242422"
+    },
+    "--dsw-static-deepseek-200": {
+      "light": "#dcdcd7",
+      "dark": "#2b2b29"
+    },
+    "--dsw-static-deepseek-300": {
+      "light": "#c9c9c4",
+      "dark": "#3b3b38"
+    },
+    "--dsw-static-deepseek-400": {
+      "light": "#3b3b38",
+      "dark": "#dddddb"
+    },
+    "--dsw-static-deepseek-450": {
+      "light": "#4a4a46",
+      "dark": "#dddddb"
+    },
+    "--dsw-static-deepseek-500": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-static-deepseek-600": {
+      "light": "#3f3f3b",
+      "dark": "#b3b3af"
+    },
+    "--dsw-static-deepseek-700-delete": {
+      "light": "#2f2f2c",
+      "dark": "#c2c2bd"
+    },
+    "--dsw-static-deepseek-800": {
+      "light": "#262624",
+      "dark": "#1d1c16"
+    },
+    "--dsw-static-deepseek-900": {
+      "light": "#1c1c1a",
+      "dark": "#16150f"
+    },
+    "--dsw-static-blue-50": {
+      "light": "#fafaf7",
+      "dark": "#171715"
+    },
+    "--dsw-static-blue-50p": {
+      "light": "#f6f6f2",
+      "dark": "#1e1e1c"
+    },
+    "--dsw-static-blue-75": {
+      "light": "#f1f1ed",
+      "dark": "#1e1e1c"
+    },
+    "--dsw-static-blue-100": {
+      "light": "#e9e9e5",
+      "dark": "#262624"
+    },
+    "--dsw-static-blue-300": {
+      "light": "#c2c2bd",
+      "dark": "#3f3f3c"
+    },
+    "--dsw-static-blue-400": {
+      "light": "#a2a29e",
+      "dark": "#6b6b67"
+    },
+    "--dsw-static-blue-450": {
+      "light": "#8c8c88",
+      "dark": "#7e7e7b"
+    },
+    "--dsw-static-blue-500": {
+      "light": "#7e7e7b",
+      "dark": "#9e9e9b"
+    },
+    "--dsw-static-blue-600": {
+      "light": "#64645f",
+      "dark": "#b1b1ad"
+    },
+    "--dsw-static-blue-800": {
+      "light": "#3b3b38",
+      "dark": "#c2c2bd"
+    },
+    "--dsw-static-blue-900": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-static-blue-950": {
+      "light": "#1e1e1e",
+      "dark": "#141412"
+    },
+    "--dsw-static-green-100": {
+      "light": "#eaf3e6",
+      "dark": "#1b241a"
+    },
+    "--dsw-static-green-400": {
+      "light": "#6fbf5a",
+      "dark": "#6fbf5a"
+    },
+    "--dsw-static-green-500": {
+      "light": "#48a131",
+      "dark": "#6fbf5a"
+    },
+    "--dsw-static-green-500-a08": {
+      "light": "#48a13114",
+      "dark": "#6fbf5a14"
+    },
+    "--dsw-static-green-500-a12": {
+      "light": "#48a1311f",
+      "dark": "#6fbf5a1f"
+    },
+    "--dsw-static-green-900": {
+      "light": "#233c2c",
+      "dark": "#233c2c"
+    },
+    "--dsw-static-red-50": {
+      "light": "#fdf1f1",
+      "dark": "#241717"
+    },
+    "--dsw-static-red-100": {
+      "light": "#fbe3e3",
+      "dark": "#2a1a1a"
+    },
+    "--dsw-static-red-400": {
+      "light": "#f26b6b",
+      "dark": "#f26b6b"
+    },
+    "--dsw-static-red-400-a12": {
+      "light": "#f26b6b1f",
+      "dark": "#f26b6b1f"
+    },
+    "--dsw-static-red-500": {
+      "light": "#f04a4a",
+      "dark": "#f04a4a"
+    },
+    "--dsw-static-red-600": {
+      "light": "#ee3838",
+      "dark": "#f26b6b"
+    },
+    "--dsw-static-red-600-a08": {
+      "light": "#ee383814",
+      "dark": "#f26b6b14"
+    },
+    "--dsw-static-red-900": {
+      "light": "#570c0c",
+      "dark": "#570c0c"
+    },
+    "--dsw-static-amber-100": {
+      "light": "#fbf1dd",
+      "dark": "#2a2213"
+    },
+    "--dsw-static-amber-400": {
+      "light": "#d9a13a",
+      "dark": "#d9a13a"
+    },
+    "--dsw-static-amber-500": {
+      "light": "#bf8700",
+      "dark": "#d9a13a"
+    },
+    "--dsw-static-amber-600": {
+      "light": "#a37100",
+      "dark": "#d9a13a"
+    },
+    "--dsw-static-amber-900": {
+      "light": "#27241f",
+      "dark": "#27241f"
+    },
+    "--dsw-alias-label-primary": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-alias-label-primary-bluish": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-alias-label-primary-dimmed": {
+      "light": "#3b3b38",
+      "dark": "#c9c9c5"
+    },
+    "--dsw-alias-label-primary-foreground": {
+      "light": "#fffffd",
+      "dark": "#0e0e0c"
+    },
+    "--dsw-alias-label-primary-inverted": {
+      "light": "#fffffd",
+      "dark": "#1e1e1c"
+    },
+    "--dsw-alias-label-secondary": {
+      "light": "#73736f",
+      "dark": "#9e9e9b"
+    },
+    "--dsw-alias-label-tertiary": {
+      "light": "#9f9f9c",
+      "dark": "#6f6f6b"
+    },
+    "--dsw-alias-label-caption": {
+      "light": "#a8a8a4",
+      "dark": "#7a7a76"
+    },
+    "--dsw-alias-label-dimmed": {
+      "light": "#c2c2bd",
+      "dark": "#4c4c48"
+    },
+    "--dsw-alias-label-document-preview": {
+      "light": "#3b3b38",
+      "dark": "#c2c2bd"
+    },
+    "--dsw-alias-label-shimmer": {
+      "light": "#0000004d",
+      "dark": "#ffffff73"
+    },
+    "--dsw-alias-label-deep-diving": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-alias-label-deep-diving-shimmer": {
+      "light": "#b5b5b0",
+      "dark": "#6b6b67"
+    },
+    "--dsw-alias-link": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-alias-menu-icon": {
+      "light": "#3b3b38",
+      "dark": "#c9c9c5"
+    },
+    "--dsw-alias-bg-base": {
+      "light": "#fdfcf6",
+      "dark": "#0e0e0c"
+    },
+    "--dsw-alias-bg-layer-1": {
+      "light": "#fdfcf6",
+      "dark": "#16150f"
+    },
+    "--dsw-alias-bg-layer-2": {
+      "light": "#fdfcf6",
+      "dark": "#1d1c16"
+    },
+    "--dsw-alias-bg-layer-3": {
+      "light": "#fdfcf6",
+      "dark": "#24231b"
+    },
+    "--dsw-alias-bg-overlay": {
+      "light": "#e4e0d0",
+      "dark": "#24231b"
+    },
+    "--dsw-alias-bg-module-platform": {
+      "light": "#f3f0e3",
+      "dark": "#16150f"
+    },
+    "--dsw-alias-bg-multi-select": {
+      "light": "#f3f0e3",
+      "dark": "#1d1c16"
+    },
+    "--dsw-alias-bg-document-preview": {
+      "light": "#f0ede0",
+      "dark": "#16150f"
+    },
+    "--dsw-alias-bg-document-selection": {
+      "light": "#adadacc3",
+      "dark": "#adadacc3"
+    },
+    "--dsw-alias-bg-skeleton": {
+      "light": "#2a2a280d",
+      "dark": "#dddddb14"
+    },
+    "--dsw-alias-bg-mask-1": {
+      "light": "#2a2a284d",
+      "dark": "#00000099"
+    },
+    "--dsw-alias-bg-mask-2": {
+      "light": "#2a2a2814",
+      "dark": "#00000033"
+    },
+    "--dsw-alias-bg-mask-3": {
+      "light": "#2a2a2880",
+      "dark": "#00000080"
+    },
+    "--dsw-alias-bg-mask-drop": {
+      "light": "#fffffdb3",
+      "dark": "#141412b3"
+    },
+    "--dsw-alias-bg-mask-photo": {
+      "light": "#000000e0",
+      "dark": "#000000e0"
+    },
+    "--dsw-alias-border-l1": {
+      "light": "#2a2a2814",
+      "dark": "#dddddb1f"
+    },
+    "--dsw-alias-border-l2": {
+      "light": "#2a2a2824",
+      "dark": "#dddddb2e"
+    },
+    "--dsw-alias-border-l2-darkmode-thin": {
+      "light": "#2a2a2824",
+      "dark": "#dddddb1f"
+    },
+    "--dsw-alias-border-l3": {
+      "light": "#2a2a283b",
+      "dark": "#dddddb3d"
+    },
+    "--dsw-alias-border-l4": {
+      "light": "#2a2a2852",
+      "dark": "#dddddb52"
+    },
+    "--dsw-alias-border-inverted": {
+      "light": "#00000000",
+      "dark": "#dddddb0a"
+    },
+    "--dsw-alias-border-inverted2": {
+      "light": "#00000000",
+      "dark": "#dddddb14"
+    },
+    "--dsw-alias-interactive-bg-hover": {
+      "light": "#2a2a2810",
+      "dark": "#dddddb17"
+    },
+    "--dsw-alias-interactive-bg-active": {
+      "light": "#2a2a281f",
+      "dark": "#dddddb26"
+    },
+    "--dsw-alias-interactive-bg-hover-accent": {
+      "light": "#2a2a2826",
+      "dark": "#dddddb3d"
+    },
+    "--dsw-alias-interactive-bg-hover-danger": {
+      "light": "#ee38380d",
+      "dark": "#ee383826"
+    },
+    "--dsw-alias-interactive-bg-hover-solid": {
+      "light": "#ece8d8",
+      "dark": "#24231b"
+    },
+    "--dsw-alias-brand-primary": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-alias-brand-primary-invert": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-alias-brand-primary-new-colorprimary-new-color": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-alias-brand-text": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-alias-button-primary-fill": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-alias-button-primary-hover": {
+      "light": "#3f3f3b",
+      "dark": "#f2f2ef"
+    },
+    "--dsw-alias-button-primary-dimmed": {
+      "light": "#ece8d8",
+      "dark": "#24231b"
+    },
+    "--dsw-alias-button-contrast-fill": {
+      "light": "#4d4d49",
+      "dark": "#dddddb"
+    },
+    "--dsw-alias-button-info-fill": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-alias-button-info-hover": {
+      "light": "#3f3f3b",
+      "dark": "#f2f2ef"
+    },
+    "--dsw-alias-button-elevated-fill": {
+      "light": "#fdfcf6",
+      "dark": "#1d1c16"
+    },
+    "--dsw-alias-button-floating-fill": {
+      "light": "#fdfcf6",
+      "dark": "#24231b"
+    },
+    "--dsw-alias-button-floating-hover": {
+      "light": "#ece8d8",
+      "dark": "#1d1c16"
+    },
+    "--dsw-alias-button-ghost-active-fill": {
+      "light": "#e9e9e5",
+      "dark": "#24231b"
+    },
+    "--dsw-alias-button-ghost-active-hover": {
+      "light": "#e2e2de",
+      "dark": "#4d4d49"
+    },
+    "--dsw-alias-button-ghost-active-border": {
+      "light": "#8c8c88",
+      "dark": "#7e7e7b"
+    },
+    "--dsw-alias-button-tool-bar-fill": {
+      "light": "#2a2a2880",
+      "dark": "#2a2a2880"
+    },
+    "--dsw-alias-button-tool-bar-fill-invisible": {
+      "light": "#1f1f1f5c",
+      "dark": "#1f1f1f5c"
+    },
+    "--dsw-alias-button-tool-bar-hover": {
+      "light": "#2a2a2899",
+      "dark": "#2a2a2899"
+    },
+    "--dsw-alias-switch-thumb": {
+      "light": "#fffffd",
+      "dark": "#a8a8a4"
+    },
+    "--dsw-menu-surface-fill": {
+      "light": "#fffffdfa",
+      "dark": "#1b1b19fa"
+    },
+    "--dsw-alias-menu-group-header-fill": {
+      "light": "#fffffdf0",
+      "dark": "#1b1b19f0"
+    },
+    "--dsw-specific-menu": {
+      "light": "#fffffdfa",
+      "dark": "#1b1b19fa"
+    },
+    "--dsw-specific-selector": {
+      "light": "#f3f0e3",
+      "dark": "#1d1c16"
+    },
+    "--dsw-specific-sidebar-fill": {
+      "light": "#f6f3e8",
+      "dark": "#131210"
+    },
+    "--dsw-specific-sidebar-nav-item-active": {
+      "light": "#e9e9e5",
+      "dark": "#1d1c16"
+    },
+    "--dsw-specific-sidebar-nav-item-active-accent": {
+      "light": "#e2e2de",
+      "dark": "#24231b"
+    },
+    "--dsw-specific-sidebar-nav-item-hover": {
+      "light": "#ece8d8",
+      "dark": "#16150f"
+    },
+    "--dsw-specific-tip": {
+      "light": "#f3f0e3",
+      "dark": "#1d1c16"
+    },
+    "--dsw-specific-input-major": {
+      "light": "#fdfcf6",
+      "dark": "#1d1c16"
+    },
+    "--dsw-specific-login-input": {
+      "light": "#f8f6ec",
+      "dark": "#1d1c16"
+    },
+    "--dsw-specific-bubble": {
+      "light": "#f0ede0",
+      "dark": "#1d1c16"
+    },
+    "--dsw-specific-bubble-highlight": {
+      "light": "#e5e5e0",
+      "dark": "#2a2a26"
+    },
+    "--dsw-alias-toast-bg": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-alias-toast-label": {
+      "light": "#fffffd",
+      "dark": "#0e0e0c"
+    },
+    "--dsw-alias-tooltip-bg": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-alias-tooltip-key-bg": {
+      "light": "#3f3f3b",
+      "dark": "#f2f2ef"
+    },
+    "--dsw-alias-turn-trigger-bg": {
+      "light": "#f0ede0",
+      "dark": "#24231b"
+    },
+    "--dsw-alias-turn-trigger-bg-hover": {
+      "light": "#e9e9e5",
+      "dark": "#323230"
+    },
+    "--dsw-alias-markdown-code-block": {
+      "light": "#f0ede0",
+      "dark": "#1e1d17"
+    },
+    "--dsw-alias-markdown-code-block-banner": {
+      "light": "#eae6d6",
+      "dark": "#232219"
+    },
+    "--dsw-alias-markdown-code-segment-selected": {
+      "light": "#fdfcf6",
+      "dark": "#24231b"
+    },
+    "--dsw-alias-markdown-code-segment-unselected": {
+      "light": "#f3f0e3",
+      "dark": "#16150f"
+    },
+    "--dsw-alias-markdown-inline-code": {
+      "light": "#f0ede0",
+      "dark": "#1e1d17"
+    },
+    "--dsw-alias-markdown-citation": {
+      "light": "#e9e9e5",
+      "dark": "#24231b"
+    },
+    "--dsw-alias-markdown-placeholder": {
+      "light": "#f3f0e3",
+      "dark": "#1d1c16"
+    },
+    "--dsw-alias-markdown-tag": {
+      "light": "#ece8d8",
+      "dark": "#1d1c16"
+    },
+    "--dsw-alias-code-diff-added": {
+      "light": "#48a13114",
+      "dark": "#6fbf5a1f"
+    },
+    "--dsw-alias-code-diff-deleted": {
+      "light": "#ee383814",
+      "dark": "#f26b6b1f"
+    },
+    "--dsw-alias-file-diff-added-bg": {
+      "light": "#eef5ea",
+      "dark": "#182117"
+    },
+    "--dsw-alias-file-diff-added-gutter": {
+      "light": "#f4f9f1",
+      "dark": "#1e2a1c"
+    },
+    "--dsw-alias-file-diff-added-marker": {
+      "light": "#48a131",
+      "dark": "#6fbf5a"
+    },
+    "--dsw-alias-file-diff-deleted-bg": {
+      "light": "#fbeceb",
+      "dark": "#251717"
+    },
+    "--dsw-alias-file-diff-deleted-gutter": {
+      "light": "#fdf3f2",
+      "dark": "#2e1c1c"
+    },
+    "--dsw-alias-file-diff-deleted-marker": {
+      "light": "#ee3838",
+      "dark": "#f26b6b"
+    },
+    "--dsw-alias-state-business-primary": {
+      "light": "#2a2a28",
+      "dark": "#dddddb"
+    },
+    "--dsw-alias-state-business-tertiary": {
+      "light": "#eeeeee",
+      "dark": "#24231b"
+    },
+    "--dsw-alias-state-success-primary": {
+      "light": "#48a131",
+      "dark": "#6fbf5a"
+    },
+    "--dsw-alias-state-success-secondary": {
+      "light": "#6fbf5a",
+      "dark": "#6fbf5a"
+    },
+    "--dsw-alias-state-success-tertiary": {
+      "light": "#eaf3e6",
+      "dark": "#1b241a"
+    },
+    "--dsw-alias-state-warn-primary": {
+      "light": "#bf8700",
+      "dark": "#d9a13a"
+    },
+    "--dsw-alias-state-warn-secondary": {
+      "light": "#d9a13a",
+      "dark": "#d9a13a"
+    },
+    "--dsw-alias-state-warn-tertiary": {
+      "light": "#fbf1dd",
+      "dark": "#2a2213"
+    },
+    "--dsw-alias-state-warn-label": {
+      "light": "#a37100",
+      "dark": "#d9a13a"
+    },
+    "--dsw-alias-state-error-primary": {
+      "light": "#ee3838",
+      "dark": "#f26b6b"
+    },
+    "--dsw-alias-state-error-secondary": {
+      "light": "#f26b6b",
+      "dark": "#f26b6b"
+    },
+    "--dsw-alias-state-idle-primary": {
+      "light": "#c2c2bd",
+      "dark": "#4d4d49"
+    },
+    "--dsw-alias-scrollbar-bg-l1": {
+      "light": "#2a2a2830",
+      "dark": "#dddddb30"
+    },
+    "--dsw-alias-scrollbar-bg-l2": {
+      "light": "#2a2a2830",
+      "dark": "#dddddb30"
+    },
+    "--dsw-alias-scrollbar-hover-l1": {
+      "light": "#2a2a2860",
+      "dark": "#dddddb60"
+    },
+    "--dsw-alias-scrollbar-hover-l2": {
+      "light": "#2a2a2860",
+      "dark": "#dddddb60"
+    },
+    "--dsw-focus-ring-color": {
+      "light": "#7e7e7b",
+      "dark": "#9e9e9b"
+    },
+    "--dsw-focus-ring-width": {
+      "light": "2px",
+      "dark": "2px"
+    },
+    "--dsw-shadow-lv1": {
+      "light": "none",
+      "dark": "none"
+    },
+    "--dsw-shadow-lv1-blur": {
+      "light": "none",
+      "dark": "none"
+    },
+    "--dsw-shadow-lv2": {
+      "light": "none",
+      "dark": "none"
+    },
+    "--dsw-shadow-lv3": {
+      "light": "0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a",
+      "dark": "0 4px 6px -1px #00000066, 0 2px 4px -2px #00000059"
+    },
+    "--dsw-elevation-stroke-color": {
+      "light": "#2a2a2847",
+      "dark": "#dddddb52"
+    },
+    "--dsw-menu-backdrop-filter": {
+      "light": "none",
+      "dark": "none"
+    },
+    "--dsw-mask-blur": {
+      "light": "none",
+      "dark": "none"
+    },
+    "--dsw-linear-gradient-think": {
+      "light": "linear-gradient(180deg, #fffffd 20.19%, #fffffd00 100%)",
+      "dark": "linear-gradient(180deg, #0e0e0c 20.19%, #0e0e0c00 100%)"
+    },
+    "--dsw-linear-think-select": {
+      "light": "linear-gradient(180deg, #fafaf7 20.19%, #fafaf700 100%)",
+      "dark": "linear-gradient(180deg, #171715 20.19%, #17171500 100%)"
+    },
+    "--dsw-radius-xs": {
+      "light": "2px",
+      "dark": "2px"
+    },
+    "--dsw-radius-sm": {
+      "light": "3px",
+      "dark": "3px"
+    },
+    "--dsw-radius-md": {
+      "light": "4px",
+      "dark": "4px"
+    },
+    "--dsw-radius-lg": {
+      "light": "5px",
+      "dark": "5px"
+    },
+    "--dsw-radius-xl": {
+      "light": "6px",
+      "dark": "6px"
+    },
+    "--dsw-radius-panel": {
+      "light": "8px",
+      "dark": "8px"
+    },
+    "--dsh-font-family-text-default": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsh-font-family-code-default": {
+      "light": "\"Maple Mono NF CN\", \"Maple Mono NF\", \"Maple Mono\", ui-monospace, \"Cascadia Code\", \"JetBrains Mono\", Consolas, Monaco, \"Courier New\", monospace",
+      "dark": "\"Maple Mono NF CN\", \"Maple Mono NF\", \"Maple Mono\", ui-monospace, \"Cascadia Code\", \"JetBrains Mono\", Consolas, Monaco, \"Courier New\", monospace"
+    },
+    "--dsw-font-family-brand": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-h1": {
+      "light": "700 calc(30px + var(--dsh-content-font-delta)) / calc(40px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "dark": "700 calc(30px + var(--dsh-content-font-delta)) / calc(40px + var(--dsh-content-font-delta)) var(--dsw-font-family)"
+    },
+    "--dsw-font-markdown-h2": {
+      "light": "700 calc(24px + var(--dsh-content-font-delta)) / calc(34px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "dark": "700 calc(24px + var(--dsh-content-font-delta)) / calc(34px + var(--dsh-content-font-delta)) var(--dsw-font-family)"
+    },
+    "--dsw-font-markdown-h3": {
+      "light": "700 calc(20px + var(--dsh-content-font-delta)) / calc(30px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "dark": "700 calc(20px + var(--dsh-content-font-delta)) / calc(30px + var(--dsh-content-font-delta)) var(--dsw-font-family)"
+    },
+    "--dsw-font-markdown-h4": {
+      "light": "700 calc(17px + var(--dsh-content-font-delta)) / calc(28px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "dark": "700 calc(17px + var(--dsh-content-font-delta)) / calc(28px + var(--dsh-content-font-delta)) var(--dsw-font-family)"
+    },
+    "--dsw-font-markdown-h1-font-size": {
+      "light": "calc(30px + var(--dsh-content-font-delta))",
+      "dark": "calc(30px + var(--dsh-content-font-delta))"
+    },
+    "--dsw-font-markdown-h2-font-size": {
+      "light": "calc(24px + var(--dsh-content-font-delta))",
+      "dark": "calc(24px + var(--dsh-content-font-delta))"
+    },
+    "--dsw-font-markdown-h3-font-size": {
+      "light": "calc(20px + var(--dsh-content-font-delta))",
+      "dark": "calc(20px + var(--dsh-content-font-delta))"
+    },
+    "--dsw-font-markdown-h4-font-size": {
+      "light": "calc(17px + var(--dsh-content-font-delta))",
+      "dark": "calc(17px + var(--dsh-content-font-delta))"
+    },
+    "--dsw-font-markdown-h1-line-height": {
+      "light": "calc(40px + var(--dsh-content-font-delta))",
+      "dark": "calc(40px + var(--dsh-content-font-delta))"
+    },
+    "--dsw-font-markdown-h2-line-height": {
+      "light": "calc(34px + var(--dsh-content-font-delta))",
+      "dark": "calc(34px + var(--dsh-content-font-delta))"
+    },
+    "--dsw-font-markdown-h3-line-height": {
+      "light": "calc(30px + var(--dsh-content-font-delta))",
+      "dark": "calc(30px + var(--dsh-content-font-delta))"
+    },
+    "--dsw-font-markdown-h4-line-height": {
+      "light": "calc(28px + var(--dsh-content-font-delta))",
+      "dark": "calc(28px + var(--dsh-content-font-delta))"
+    },
+    "--dsw-font-markdown-base-line-height": {
+      "light": "calc(25px + var(--dsh-content-font-delta))",
+      "dark": "calc(25px + var(--dsh-content-font-delta))"
+    },
+    "--dsw-font-markdown-base": {
+      "light": "var(--dsh-content-font-size,14px) / calc(25px + var(--dsh-content-font-delta)) var(--dsw-font-family)",
+      "dark": "var(--dsh-content-font-size,14px) / calc(25px + var(--dsh-content-font-delta)) var(--dsw-font-family)"
+    },
+    "--dsw-font-markdown-base-font-family": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-base-strong-font-family": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-base-italic-font-family": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-base-strong-italic-font-family": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-h1-font-family": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-h2-font-family": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-h3-font-family": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-h4-font-family": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-small-font-family": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-small-italic-font-family": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-small-strong-font-family": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-small-strong-italic-font-family": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-table-font-family": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-table-head-font-family": {
+      "light": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif",
+      "dark": "\"Noto Serif SC\", \"Noto Serif\", \"Source Han Serif SC\", \"Source Han Serif\", \"Songti SC\", STSong, SimSun, Georgia, \"Times New Roman\", serif"
+    },
+    "--dsw-font-markdown-code-font-family": {
+      "light": "\"Maple Mono NF CN\", \"Maple Mono NF\", \"Maple Mono\", ui-monospace, \"Cascadia Code\", \"JetBrains Mono\", Consolas, Monaco, \"Courier New\", monospace",
+      "dark": "\"Maple Mono NF CN\", \"Maple Mono NF\", \"Maple Mono\", ui-monospace, \"Cascadia Code\", \"JetBrains Mono\", Consolas, Monaco, \"Courier New\", monospace"
+    },
+    "--dsw-font-markdown-code-block-font-family": {
+      "light": "\"Maple Mono NF CN\", \"Maple Mono NF\", \"Maple Mono\", ui-monospace, \"Cascadia Code\", \"JetBrains Mono\", Consolas, Monaco, \"Courier New\", monospace",
+      "dark": "\"Maple Mono NF CN\", \"Maple Mono NF\", \"Maple Mono\", ui-monospace, \"Cascadia Code\", \"JetBrains Mono\", Consolas, Monaco, \"Courier New\", monospace"
+    },
+    "--dsw-font-markdown-code-block-small-font-family": {
+      "light": "\"Maple Mono NF CN\", \"Maple Mono NF\", \"Maple Mono\", ui-monospace, \"Cascadia Code\", \"JetBrains Mono\", Consolas, Monaco, \"Courier New\", monospace",
+      "dark": "\"Maple Mono NF CN\", \"Maple Mono NF\", \"Maple Mono\", ui-monospace, \"Cascadia Code\", \"JetBrains Mono\", Consolas, Monaco, \"Courier New\", monospace"
+    },
+    "--ds-font-family-code": {
+      "light": "\"Maple Mono NF CN\", \"Maple Mono NF\", \"Maple Mono\", ui-monospace, \"Cascadia Code\", \"JetBrains Mono\", Consolas, Monaco, \"Courier New\", monospace",
+      "dark": "\"Maple Mono NF CN\", \"Maple Mono NF\", \"Maple Mono\", ui-monospace, \"Cascadia Code\", \"JetBrains Mono\", Consolas, Monaco, \"Courier New\", monospace"
+    },
+    "--dsh-scrollbar-width": {
+      "light": "5px",
+      "dark": "5px"
+    },
+    "--dsh-scrollbar-thumb-border": {
+      "light": "0px",
+      "dark": "0px"
+    },
+    "--dsh-scrollbar-track-margin": {
+      "light": "0px",
+      "dark": "0px"
+    },
+    "--shiki-foreground": {
+      "light": "#24292f",
+      "dark": "#d4d4d4"
+    },
+    "--shiki-background": {
+      "light": "#f0ede0",
+      "dark": "#1e1d17"
+    },
+    "--shiki-token-constant": {
+      "light": "#005cc5",
+      "dark": "#b5cea8"
+    },
+    "--shiki-token-string": {
+      "light": "#032f62",
+      "dark": "#ce9178"
+    },
+    "--shiki-token-comment": {
+      "light": "#6e7781",
+      "dark": "#6a9955"
+    },
+    "--shiki-token-keyword": {
+      "light": "#d73a49",
+      "dark": "#569cd6"
+    },
+    "--shiki-token-parameter": {
+      "light": "#953800",
+      "dark": "#9cdcfe"
+    },
+    "--shiki-token-function": {
+      "light": "#6f42c1",
+      "dark": "#dcdcaa"
+    },
+    "--shiki-token-string-expression": {
+      "light": "#0a3069",
+      "dark": "#ce9178"
+    },
+    "--shiki-token-punctuation": {
+      "light": "#24292f",
+      "dark": "#d4d4d4"
+    },
+    "--shiki-token-link": {
+      "light": "#032f62",
+      "dark": "#4ec9b0"
+    }
+  }
+}
