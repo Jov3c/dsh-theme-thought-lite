@@ -1,5 +1,7 @@
 # ThoughtLite skin for DeepSeek Harness
 
+[English](README.en.md) | **中文**
+
 把 [astro-theme-thought-lite](https://github.com/tuyuritio/astro-theme-thought-lite) 的设计语言做成的一套 DSH 桌面版皮肤：**单色、纸面、衬线正文**的编辑部式重绘。
 
 - 浅色：奶油纸面 `#fdfcf6` + 墨黑 `#2a2a28`（上游原值 `#fffffd`，见「偏差」）
@@ -9,13 +11,17 @@
 - **全站衬线**（Noto Serif 栈，外壳也在内）、代码 Maple Mono 栈 —— 上游 `body` 就是衬线，没有一处无衬线
 - **方角**（2/3/4/5/6/8px）、发丝级边框、**无阴影**（只有浮层保留上游的 `shadow-md`）、5px 墨色滚动条
 
-先开 [preview/index.html](preview/index.html) 看效果（左右浅色/深色并排，与插件共用同一份令牌表）。
+![真实界面：全站衬线、奶油纸面、用户消息是带墨线的引文块、侧栏报头横线](docs/app.png)
 
-![ThoughtLite skin：浅色 / 深色预览](docs/preview.png)
+> 上图是真实 DSH 界面（账户信息与工作区名已打码）；下面这张是由同一份令牌表渲染的浅色/深色对照，也能直接打开 [preview/index.html](preview/index.html) 看。
+
+![浅色 / 深色对照](docs/preview.png)
 
 ---
 
-## 安装（桌面版）
+## 安装
+
+任意 profile 都行（`desktop` / `web` / 自建），把下面命令里的 profile 名换掉即可。
 
 **从 GitHub 装（推荐）**
 
@@ -23,13 +29,21 @@
 dsh plugin --profile desktop add github:Jov3c/dsh-theme-thought-lite
 ```
 
-**从本地目录装**
+**从 npm 装（发布后可用；插件市场也走这条路）**
+
+```powershell
+dsh plugin --profile desktop add dsh-theme-thought-lite
+```
+
+**从本地目录装（改皮肤时用）**
 
 ```powershell
 dsh plugin --profile desktop add link:D:\Main\dsh-theme-thought-lite
 ```
 
 然后**完全退出并重启 DeepSeek Harness**（关窗口不算，要退出进程）。重启后在「设置 → 通用 → 外观」里照常切浅色/深色/跟随系统。
+
+> npm 上还没发：这台机器未登录 npm，发布是最后一步的手工操作。见「发布到 npm」。
 
 - 这条命令会：把包写进 profile 的 `dependencies`、把 `dsh-theme-thought-lite` 追加进 `dsh.profile.bundles`（因为 package.json 里声明了 `dsh.bundle.patch`），并由 [cordis.patch.yml](cordis.patch.yml) 插入插件行。**不需要手改任何 profile 文件。**
 - 卸载 / 回滚：
@@ -229,6 +243,20 @@ node D:\Main\dsh-theme-thought-lite\scripts\graph-probe.mjs
 ### 4. 插件列表里能看状态
 
 **设置 → 插件**的列表会显示页面侧的同步失败（如果 bundle 执行失败），并提供「重试」而不改动宿主启用状态。列表里有 `dsh-theme-thought-lite` 且无报错，就说明页面已加载成功。
+
+---
+
+## 发布到 npm
+
+仓库里已经做好了发布准备（`private` 已移除、`publishConfig.access=public`、`repository`/`homepage`/`bugs` 已填、`prepublishOnly` 会先重建再跑 73 项校验），剩下的只是登录与发布：
+
+```powershell
+cd D:\Main\dsh-theme-thought-lite
+npm login                 # 浏览器里登录你的 npm 账号
+npm publish               # prepublishOnly 会自动先构建并校验
+```
+
+`dsh-theme-thought-lite` 这个包名目前未被占用。发到 npm 之后，DSH 的插件市场（dshmarket）才能索引到它；包里的 `dsh` 清单字段与 keywords 已按市场扫描习惯填好。
 
 ---
 
