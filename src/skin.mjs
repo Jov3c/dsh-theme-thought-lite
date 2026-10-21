@@ -58,10 +58,10 @@ const both = (value) => ({ light: value, dark: value });
 const m = (light, dark) => ({ light, dark });
 
 // ───────────────────────────── surfaces ──────────────────────────────
-// Upstream paper is #fffffd — technically warm, visually white. Pushed into an
-// actual cream here: the complaint that drove v3 was that v2 still looked like
-// the default theme, and the default canvas is pure white. The reading column
-// stays the brightest surface so body text keeps full contrast.
+// Upstream paper is #fffffd — technically warm, visually white, and the stock
+// harness canvas is white too, so the two are indistinguishable side by side.
+// Cream makes the paper feel actually visible. The reading column stays the
+// brightest surface so body text keeps full contrast.
 const L = {
   canvas: '#fdfcf6',
   layer1: '#f8f6ec',
